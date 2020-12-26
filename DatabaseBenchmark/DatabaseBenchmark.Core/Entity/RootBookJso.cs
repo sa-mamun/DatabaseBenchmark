@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
 
 namespace DatabaseBenchmark.Core.Entity
 {
-    public class GenerateBook
+    public class RootBookJso
     {
         public int Id { get; set; }
-        public Guid Key { get; set; }
+        public string Key { get; set; }
         public string Value { get; set; }
     }
 }

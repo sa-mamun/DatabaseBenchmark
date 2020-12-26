@@ -41,10 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
-    <Compile Include="Entity\Book.cs" />
-    <Compile Include="Entity\GenerateBook.cs" />
+    <Compile Include="BookJso.cs" />
+    <Compile Include="Book.cs" />
+    <Compile Include="Entity\RootBookJso.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandomBookGenerator.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

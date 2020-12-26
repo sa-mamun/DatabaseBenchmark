@@ -27,9 +27,9 @@ namespace DatabaseBenchmark.Web.Controllers
         {
             if(ModelState.IsValid)
             {
-                var bookVM = new BookVM();
-                var listOfBooks = bookVM.ListOfBookObject(model.TotalNoOfBooks);
-                ViewBag.BookList = listOfBooks;
+                var bookModel = new BookModel();
+                var listOfRootBookJsos = bookModel.ListOfBookObject(model.TotalNoOfBooks);
+                ViewBag.BookList = listOfRootBookJsos;
             }
             return View();
         }

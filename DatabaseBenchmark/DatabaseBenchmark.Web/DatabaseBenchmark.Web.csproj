@@ -125,11 +125,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\BookHelper.cs" />
-    <Compile Include="Models\BookVM.cs" />
+    <Compile Include="Models\BookModel.cs" />
     <Compile Include="Models\GenerateBookVM.cs" />
-    <Compile Include="Models\RandomBookGenerator.cs" />
-    <Compile Include="Models\RootBookHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

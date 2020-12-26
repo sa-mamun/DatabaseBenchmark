@@ -1,8 +1,8 @@
 ﻿@model DatabaseBenchmark.Web.Models.GenerateBookVM
-@using DatabaseBenchmark.Web.Models
+@using DatabaseBenchmark.Core.Entity
 @{
     ViewBag.Title = "Generate Book";
-    List<RootBookHelper> books = ViewBag.BookList;
+    List<RootBookJso> books = ViewBag.BookList;
 }
 
 <div id="content">

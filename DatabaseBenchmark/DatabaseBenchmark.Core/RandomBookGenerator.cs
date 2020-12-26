@@ -1,10 +1,10 @@
-﻿using DatabaseBenchmark.Core.Entity;
+﻿using DatabaseBenchmark.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace DatabaseBenchmark.Web.Models
+namespace DatabaseBenchmark.Core
 {
     public class RandomBookGenerator
     {
