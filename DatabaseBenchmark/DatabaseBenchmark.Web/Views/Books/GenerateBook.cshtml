@@ -22,7 +22,7 @@
                         @Html.LabelFor(m => m.TotalNoOfBooks)
                     </div>
                     <div class="col-md-5">
-                        @Html.TextBoxFor(m => m.TotalNoOfBooks, new { @class = "form-control" })
+                        @Html.TextBoxFor(m => m.TotalNoOfBooks, new { @type = "number", @class = "form-control" })
                         @Html.ValidationMessageFor(m => m.TotalNoOfBooks, "", new { @class = "text-danger" })
                     </div>
                 </div>
