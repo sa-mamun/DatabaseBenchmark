@@ -2,7 +2,7 @@
 @using DatabaseBenchmark.Web.Models
 @{
     ViewBag.Title = "Generate Book";
-    List<GenerateBookVM> books = ViewBag.BookList;
+    List<RootBookHelper> books = ViewBag.BookList;
 }
 
 <div id="content">
@@ -33,48 +33,45 @@
                 </div>
             }
         </div>
+        @if (books != null)
+        {
+            <div class="mt-5">
+                <h1 class="h3 mb-2 mt-5 text-gray-800">Book Table</h1>
+                <hr />
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                        <h6 class="m-0 font-weight-bold text-primary">Book Information</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th>Key</th>
+                                        <th>Value</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
 
-        <div class="mt-5">
-            <h1 class="h3 mb-2 mt-5 text-gray-800">Category Table</h1>
-            <hr />
-
-             DataTales Example 
-            <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Book Information</h6>
-                </div>
-                <div class="card-body">
-                    <div class="table-responsive">
-                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                            <thead>
-                                <tr>
-                                    <th>Key</th>
-                                    <th>Value</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @if (books != null)
-                                {
-                                    foreach (var item in books)
+                                    @foreach (var item in books)
                                     {
                                         <tr>
                                             <td>@item.Key</td>
                                             <td>@item.Value</td>
                                         </tr>
                                     }
-                                }
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <th>Key</th>
-                                    <th>Value</th>
-                                </tr>
-                            </tfoot>
-                        </table>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>Key</th>
+                                        <th>Value</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
+        }
     </div>
 </div>

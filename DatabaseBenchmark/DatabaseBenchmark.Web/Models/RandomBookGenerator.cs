@@ -1,4 +1,4 @@
-﻿using DatabaseBenchmark.Web.Entity;
+﻿using DatabaseBenchmark.Core.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,4 +1,4 @@
-﻿using DatabaseBenchmark.Web.Entity;
+﻿using DatabaseBenchmark.Core.Entity;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -12,39 +12,51 @@ namespace DatabaseBenchmark.Web.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public string Author { get; set; }
-        public List<GenerateBookVM> GenerateBookVMs { get; set; }
+        public List<BookHelper> GenerateKeyValueBooks { get; set; }
+        public List<RootBookHelper> RootBookHelpers { get; set; }
 
-        public List<GenerateBookVM> ListOfBookObject(int total)
+        public List<RootBookHelper> ListOfBookObject(int total)
         {
             var randomBookGenerator = new RandomBookGenerator();
-            GenerateBookVMs = new List<GenerateBookVM>();
+            RootBookHelpers = new List<RootBookHelper>();
 
             for (int i=0; i<total; i++)
             {
+                string key = Guid.NewGuid().ToString();
                 var bookList = randomBookGenerator.GenerateBooks();
-                string json = ConvertObjToJson(bookList);
-                GenerateBookVMs = GenerateKeyValue(json);
+                GenerateKeyValueBooks = GenerateKeyValue(bookList, key);
+                string json = ConvertObjToJson(GenerateKeyValueBooks);
+
+                var rootBookHelper = new RootBookHelper
+                {
+                    Key = key,
+                    Value = json
+                };
+
+                RootBookHelpers.Add(rootBookHelper);
             }
  
-            return GenerateBookVMs;
+            return RootBookHelpers;
         }
 
-        public List<GenerateBookVM> GenerateKeyValue(string json)
+        public List<BookHelper> GenerateKeyValue(List<Book> books, string key)
         {
-            var generateBookVM = new GenerateBookVM
+            GenerateKeyValueBooks = new List<BookHelper>();
+
+            var bookHelper = new BookHelper
             {
-                Key = Guid.NewGuid(),
-                Value = json
+                Key = key,
+                Books = books
             };
 
-            GenerateBookVMs.Add(generateBookVM);
+            GenerateKeyValueBooks.Add(bookHelper);
 
-            return GenerateBookVMs;
+            return GenerateKeyValueBooks;
         }
 
-        public string ConvertObjToJson(List<Book> bookLists)
+        public string ConvertObjToJson(List<BookHelper> bookHelperLists)
         {
-            string json = JsonConvert.SerializeObject(bookLists);
+            string json = JsonConvert.SerializeObject(bookHelperLists);
             return json;
         }
     }

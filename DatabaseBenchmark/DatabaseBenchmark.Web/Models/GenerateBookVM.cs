@@ -10,6 +10,7 @@ namespace DatabaseBenchmark.Web.Models
     {
         [DisplayName("Enter Total Books:")]
         public int TotalNoOfBooks { get; set; }
+        public int Id { get; set; }
         public Guid Key { get; set; }
         public string Value { get; set; }
     }

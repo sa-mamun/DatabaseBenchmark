@@ -1,0 +1,6 @@
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Core\bin\Debug\DatabaseBenchmark.Core.dll
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Core\bin\Debug\DatabaseBenchmark.Core.pdb
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Core\obj\Debug\DatabaseBenchmark.Core.csprojAssemblyReference.cache
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Core\obj\Debug\DatabaseBenchmark.Core.csproj.CoreCompileInputs.cache
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Core\obj\Debug\DatabaseBenchmark.Core.dll
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Core\obj\Debug\DatabaseBenchmark.Core.pdb
