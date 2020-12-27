@@ -28,9 +28,22 @@ namespace DatabaseBenchmark.Web.Controllers
             if(ModelState.IsValid)
             {
                 var bookModel = new BookModel();
-                var listOfRootBookJsos = bookModel.ListOfBookObject(model.TotalNoOfBooks);
-                ViewBag.BookList = listOfRootBookJsos;
+                var time = bookModel.ListOfBookObject(model.TotalNoOfBooks);
+
+                // Calculating TimeSpan
+                TimeSpan duration = DateTime.Parse(time.endTime).Subtract(DateTime.Parse(time.startTime));
+
+                ViewBag.StartTime = time.startTime;
+                ViewBag.EndTime = time.endTime;
+                ViewBag.Duration = duration.ToString();
+                ViewBag.RootBookList = time.rootBooks;
             }
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult GetBook()
+        {
             return View();
         }
     }

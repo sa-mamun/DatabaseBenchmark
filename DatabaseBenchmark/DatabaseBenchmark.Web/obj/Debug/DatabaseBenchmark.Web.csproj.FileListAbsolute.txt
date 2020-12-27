@@ -160,3 +160,14 @@ D:\Onnorokom_Software\Github_Projects\DatabaseBenchmark\DatabaseBenchmark\Databa
 D:\Onnorokom_Software\Github_Projects\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\obj\Debug\DatabaseBenchmark.Web.csproj.CopyComplete
 D:\Onnorokom_Software\Github_Projects\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\obj\Debug\DatabaseBenchmark.Web.dll
 D:\Onnorokom_Software\Github_Projects\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\obj\Debug\DatabaseBenchmark.Web.pdb
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\bin\FluentNHibernate.dll
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\bin\NHibernate.dll
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\bin\Remotion.Linq.dll
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\bin\Remotion.Linq.EagerFetching.dll
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\bin\Iesi.Collections.dll
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\bin\FluentNHibernate.pdb
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\bin\FluentNHibernate.xml
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\bin\NHibernate.xml
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\bin\Remotion.Linq.xml
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\bin\Remotion.Linq.EagerFetching.xml
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\bin\Iesi.Collections.xml

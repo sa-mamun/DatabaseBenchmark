@@ -1,5 +1,6 @@
 ﻿using DatabaseBenchmark.Core;
 using DatabaseBenchmark.Core.Entity;
+using DatabaseBenchmark.Core.Services;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -11,12 +12,14 @@ namespace DatabaseBenchmark.Web.Models
     public class BookModel
     {
         public List<BookJso> GenerateKeyValueBooks { get; set; }
-        public List<RootBookJso> RootBookJsos { get; set; }
+        public List<RootBook> RootBooks { get; set; }
 
-        public List<RootBookJso> ListOfBookObject(int total)
+        private readonly IRootBookService _rootBookService = new RootBookService();
+
+        public (string startTime, string endTime, List<RootBook> rootBooks) ListOfBookObject(int total)
         {
             var randomBookGenerator = new RandomBookGenerator();
-            RootBookJsos = new List<RootBookJso>();
+            RootBooks = new List<RootBook>();
 
             for (int i=0; i<total; i++)
             {
@@ -24,16 +27,22 @@ namespace DatabaseBenchmark.Web.Models
                 var bookList = randomBookGenerator.GenerateBooks();
                 var json = GenerateKeyValue(bookList, key);
 
-                var rootBookJso = new RootBookJso
+                var rootBook = new RootBook
                 {
-                    Key = key,
-                    Value = json
+                    BookKey = key,
+                    BookValue = json
                 };
 
-                RootBookJsos.Add(rootBookJso);
+                RootBooks.Add(rootBook);
             }
- 
-            return RootBookJsos;
+
+            string startTime = DateTime.Now.ToString("h:mm:ss tt");
+
+            _rootBookService.AddRootBook(RootBooks);
+
+            string endTime = DateTime.Now.ToString("h:mm:ss tt");
+
+            return (startTime, endTime, RootBooks);
         }
 
 

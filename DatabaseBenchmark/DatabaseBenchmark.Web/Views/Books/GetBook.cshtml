@@ -1,0 +1,36 @@
+﻿@model DatabaseBenchmark.Web.Models.GenerateBookVM
+@using DatabaseBenchmark.Core.Entity
+@{
+    ViewBag.Title = "Get Book";
+}
+
+<div id="content">
+    <div class="container-fluid" style="width:100%;">
+        <!-- Page Heading -->
+        <div>
+            <h1 class="h3 mb-4 text-gray-800">Enter no of Books</h1>
+            <hr />
+        </div>
+        <div class="mb-5">
+            @using (Html.BeginForm("GetBook", "Books", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group row">
+                    <div class="col-md-8">
+                        <input type="submit" class="btn btn-primary" id="btn_submit" value="Generate Random Key" />
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="mt-5">
+            <h1 class="h3 mb-2 mt-5 text-gray-800">Book Table</h1>
+            <hr />
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Book Information</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

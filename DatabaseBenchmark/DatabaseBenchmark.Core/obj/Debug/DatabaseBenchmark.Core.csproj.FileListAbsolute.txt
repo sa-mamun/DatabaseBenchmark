@@ -1,6 +1,5 @@
 D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Core\bin\Debug\DatabaseBenchmark.Core.dll
 D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Core\bin\Debug\DatabaseBenchmark.Core.pdb
-D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Core\obj\Debug\DatabaseBenchmark.Core.csprojAssemblyReference.cache
 D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Core\obj\Debug\DatabaseBenchmark.Core.csproj.CoreCompileInputs.cache
 D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Core\obj\Debug\DatabaseBenchmark.Core.dll
 D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Core\obj\Debug\DatabaseBenchmark.Core.pdb
@@ -9,3 +8,18 @@ D:\Onnorokom_Software\Github_Projects\DatabaseBenchmark\DatabaseBenchmark\Databa
 D:\Onnorokom_Software\Github_Projects\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Core\obj\Debug\DatabaseBenchmark.Core.csproj.CoreCompileInputs.cache
 D:\Onnorokom_Software\Github_Projects\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Core\obj\Debug\DatabaseBenchmark.Core.dll
 D:\Onnorokom_Software\Github_Projects\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Core\obj\Debug\DatabaseBenchmark.Core.pdb
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Core\bin\Debug\Antlr3.Runtime.dll
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Core\bin\Debug\FluentNHibernate.dll
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Core\bin\Debug\Iesi.Collections.dll
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Core\bin\Debug\NHibernate.dll
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Core\bin\Debug\Remotion.Linq.dll
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Core\bin\Debug\Remotion.Linq.EagerFetching.dll
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Core\bin\Debug\Antlr3.Runtime.xml
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Core\bin\Debug\FluentNHibernate.pdb
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Core\bin\Debug\FluentNHibernate.xml
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Core\bin\Debug\Iesi.Collections.xml
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Core\bin\Debug\NHibernate.xml
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Core\bin\Debug\Remotion.Linq.xml
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Core\bin\Debug\Remotion.Linq.EagerFetching.xml
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Core\obj\Debug\DatabaseBenchmark.Core.csproj.CopyComplete
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Core\obj\Debug\DatabaseBenchmark.Core.csprojAssemblyReference.cache
