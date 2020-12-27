@@ -133,5 +133,17 @@ namespace DatabaseBenchmark.Core.Repositories
                 return list;
             }
         }
+
+        public T GetObject(Expression<Func<T, bool>> predicate = null)
+        {
+            using (ISession _session = NHibernateMySQLContext.SessionOpen())
+            {
+
+                var result = _session.Query<T>()
+                    .Where(predicate).FirstOrDefault();
+
+                return result;
+            }
+        }
     }
 }

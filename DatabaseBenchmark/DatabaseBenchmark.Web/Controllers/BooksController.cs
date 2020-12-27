@@ -46,5 +46,17 @@ namespace DatabaseBenchmark.Web.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        public ActionResult GetBook(GetValueVM model)
+        {
+            if (ModelState.IsValid)
+            {
+                var getValueVM = new GetValueVM();
+                var result = getValueVM.GetBookValue(model.BookKey);
+                ViewBag.RootBook = result;
+            }
+            return View();
+        }
     }
 }

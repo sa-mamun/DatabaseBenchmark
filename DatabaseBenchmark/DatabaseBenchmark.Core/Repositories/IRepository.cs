@@ -15,6 +15,7 @@ namespace DatabaseBenchmark.Core.Repositories
         T GetById(int id);
         IList<T> GetList();
         IList<T> GetList(Expression<Func<T, bool>> predicate = null);
+        T GetObject(Expression<Func<T, bool>> predicate = null);
         int GetCount(Expression<Func<T, bool>> predicate = null);
     }
 }

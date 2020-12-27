@@ -127,6 +127,7 @@
     </Compile>
     <Compile Include="Models\BookModel.cs" />
     <Compile Include="Models\GenerateBookVM.cs" />
+    <Compile Include="Models\GetValueVM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

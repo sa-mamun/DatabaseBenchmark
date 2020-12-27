@@ -16,5 +16,10 @@ namespace DatabaseBenchmark.Core.Services
         {
             _repository.Insert(rootBooks);
         }
+
+        public RootBook GetBookByKey(string key)
+        {
+            return _repository.GetObject(x => x.BookKey == key);
+        }
     }
 }
