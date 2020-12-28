@@ -1,7 +1,11 @@
-﻿using DatabaseBenchmark.Web.Models;
+﻿using DatabaseBenchmark.Core;
+using DatabaseBenchmark.Web.Models;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json;
 using System.Web;
 using System.Web.Mvc;
 
@@ -52,9 +56,18 @@ namespace DatabaseBenchmark.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                var getValueVM = new GetValueVM();
-                var result = getValueVM.GetBookValue(model.BookKey);
-                ViewBag.RootBook = result;
+                try
+                {
+                    var getValueVM = new GetValueVM();
+
+                    var result = getValueVM.GetBookValue(model.BookKey);
+                    var json = JsonConvert.DeserializeObject<BookJso>(result.BookValue);
+                    return Json(json);
+                }
+                catch(Exception ex)
+                {
+                    ModelState.AddModelError("", "Failed!!Please try again");
+                }
             }
             return View();
         }
