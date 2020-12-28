@@ -1,0 +1,370 @@
+2020-12-28 11:53:35,778 [8] INFO  NHibernate.Cfg.Environment [(null)] - NHibernate 5.3.3+7530a259e1b52ee8a9722e7bbd728ac913ef68f7 (assembly 5.3.0.0)
+2020-12-28 11:53:35,792 [8] INFO  NHibernate.Cfg.Environment [(null)] - hibernate-configuration section not found in application configuration file
+2020-12-28 11:53:35,793 [8] INFO  NHibernate.Cfg.Environment [(null)] - Bytecode provider name : lcg
+2020-12-28 11:53:35,794 [8] INFO  NHibernate.Cfg.Environment [(null)] - Objects factory class : NHibernate.Bytecode.ActivatorObjectsFactory
+2020-12-28 11:53:35,794 [8] INFO  NHibernate.Cfg.Environment [(null)] - Using reflection optimizer
+2020-12-28 11:53:35,866 [8] DEBUG NHibernate.Cfg.Configuration [(null)] - Mapping XML:
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"><class xmlns="urn:nhibernate-mapping-2.2" name="DatabaseBenchmark.Core.Entity.RootBook, DatabaseBenchmark.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" table="tblRootBook"><id name="Id" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="Id" /><generator class="identity" /></id><property name="BookKey" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="BookKey" /></property><property name="BookValue" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="BookValue" /></property></class></hibernate-mapping>
+2020-12-28 11:53:36,134 [8] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - Mapping class: DatabaseBenchmark.Core.Entity.RootBook -> tblRootBook
+2020-12-28 11:53:36,152 [8] DEBUG NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - Mapped property: Id -> Id, type: Int32
+2020-12-28 11:53:36,159 [8] DEBUG NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - Mapped property: BookKey -> BookKey, type: String
+2020-12-28 11:53:36,159 [8] DEBUG NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - Mapped property: BookValue -> BookValue, type: String
+2020-12-28 11:53:36,169 [8] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-12-28 11:53:36,177 [8] INFO  NHibernate.Cfg.Configuration [(null)] - checking mappings queue
+2020-12-28 11:53:36,177 [8] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-many association mappings
+2020-12-28 11:53:36,177 [8] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-one association property references
+2020-12-28 11:53:36,177 [8] INFO  NHibernate.Cfg.Configuration [(null)] - processing foreign key constraints
+2020-12-28 11:53:36,179 [8] INFO  NHibernate.Cfg.Configuration [(null)] - processing filters (second pass)
+2020-12-28 11:53:36,186 [8] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-12-28 11:53:36,189 [8] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-12-28 11:53:36,224 [8] INFO  NHibernate.Exceptions.SQLExceptionConverterFactory [(null)] - Using dialect defined converter
+2020-12-28 11:53:36,225 [8] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Generate SQL with comments: disabled
+2020-12-28 11:53:36,226 [8] INFO  NHibernate.Connection.ConnectionProviderFactory [(null)] - Initializing connection provider: NHibernate.Connection.DriverConnectionProvider
+2020-12-28 11:53:36,226 [8] INFO  NHibernate.Connection.ConnectionProvider [(null)] - Configuring ConnectionProvider
+2020-12-28 11:53:36,239 [8] ERROR NHibernate.Util.ReflectHelper [(null)] - Could not load type MySql.Data.MySqlClient.MySqlConnection, MySql.Data.
+System.IO.FileNotFoundException: Could not load file or assembly 'MySql.Data' or one of its dependencies. The system cannot find the file specified.
+File name: 'MySql.Data'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+=== Pre-bind state information ===
+LOG: DisplayName = MySql.Data
+ (Partial)
+WRN: Partial binding information was supplied for an assembly:
+WRN: Assembly Name: MySql.Data | Domain ID: 2
+WRN: A partial bind occurs when only part of the assembly display name is provided.
+WRN: This might result in the binder loading an incorrect assembly.
+WRN: It is recommended to provide a fully specified textual identity for the assembly,
+WRN: that consists of the simple name, version, culture, and public key token.
+WRN: See whitepaper http://go.microsoft.com/fwlink/?LinkId=109270 for more information and common solutions to this issue.
+LOG: Appbase = file:///D:/Github_Project/DatabaseBenchmark/DatabaseBenchmark/DatabaseBenchmark.Web/
+LOG: Initial PrivatePath = D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\bin
+Calling assembly : NHibernate, Version=5.3.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\web.config
+LOG: Using host configuration file: C:\Users\OSL\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Policy not being applied to reference at this time (private, custom, partial, or location-based assembly bind).
+LOG: The same bind was seen before, and was failed with hr = 0x80070002.
+
+2020-12-28 11:53:36,247 [8] ERROR NHibernate.Util.ReflectHelper [(null)] - Could not load type MySql.Data.MySqlClient.MySqlCommand, MySql.Data.
+System.IO.FileNotFoundException: Could not load file or assembly 'MySql.Data' or one of its dependencies. The system cannot find the file specified.
+File name: 'MySql.Data'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+=== Pre-bind state information ===
+LOG: DisplayName = MySql.Data
+ (Partial)
+WRN: Partial binding information was supplied for an assembly:
+WRN: Assembly Name: MySql.Data | Domain ID: 2
+WRN: A partial bind occurs when only part of the assembly display name is provided.
+WRN: This might result in the binder loading an incorrect assembly.
+WRN: It is recommended to provide a fully specified textual identity for the assembly,
+WRN: that consists of the simple name, version, culture, and public key token.
+WRN: See whitepaper http://go.microsoft.com/fwlink/?LinkId=109270 for more information and common solutions to this issue.
+LOG: Appbase = file:///D:/Github_Project/DatabaseBenchmark/DatabaseBenchmark/DatabaseBenchmark.Web/
+LOG: Initial PrivatePath = D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\bin
+Calling assembly : NHibernate, Version=5.3.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\web.config
+LOG: Using host configuration file: C:\Users\OSL\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Policy not being applied to reference at this time (private, custom, partial, or location-based assembly bind).
+LOG: The same bind was seen before, and was failed with hr = 0x80070002.
+
+2020-12-28 11:53:36,278 [8] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Transaction factory: NHibernate.Transaction.AdoNetWithSystemTransactionFactory
+2020-12-28 11:53:36,279 [8] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Optimize cache for minimal puts: False
+2020-12-28 11:53:36,279 [8] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Connection release mode: auto
+2020-12-28 11:53:36,279 [8] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Default batch fetch size: 1
+2020-12-28 11:53:36,279 [8] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Statistics: disabled
+2020-12-28 11:53:36,279 [8] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Deleted entity synthetic identifier rollback: disabled
+2020-12-28 11:53:36,280 [8] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
+2020-12-28 11:53:36,280 [8] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Query provider: NHibernate.Linq.DefaultQueryProvider
+2020-12-28 11:53:36,281 [8] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Query language substitutions: {}
+2020-12-28 11:53:36,282 [8] INFO  NHibernate.Cfg.SettingsFactory [(null)] - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=5.3.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2020-12-28 11:53:36,282 [8] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Order SQL inserts for batching: disabled
+2020-12-28 11:53:36,282 [8] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Order SQL updates for batching: disabled
+2020-12-28 11:53:36,282 [8] DEBUG NHibernate.Cfg.SettingsFactory [(null)] - Wrap result sets: disabled
+2020-12-28 11:53:36,283 [8] DEBUG NHibernate.Cfg.SettingsFactory [(null)] - Batch versioned data: disabled
+2020-12-28 11:53:36,283 [8] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Batcher factory: NHibernate.AdoNet.NonBatchingBatcherFactory, NHibernate, Version=5.3.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2020-12-28 11:53:36,283 [8] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Default flush mode: Auto
+2020-12-28 11:53:36,284 [8] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Named query checking : enabled
+2020-12-28 11:53:36,285 [8] DEBUG NHibernate.Cfg.SettingsFactory [(null)] - Track session id: enabled
+2020-12-28 11:53:36,291 [8] INFO  NHibernate.Impl.SessionFactoryImpl [(null)] - building session factory
+2020-12-28 11:53:36,292 [8] DEBUG NHibernate.Impl.SessionFactoryImpl [(null)] - Session factory constructed with filter configurations : {}
+2020-12-28 11:53:36,292 [8] DEBUG NHibernate.Impl.SessionFactoryImpl [(null)] - instantiating session factory with properties: {'use_reflection_optimizer'='True', 'connection.provider'='NHibernate.Connection.DriverConnectionProvider', 'connection.driver_class'='NHibernate.Driver.MySqlDataDriver, NHibernate, Version=5.3.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4', 'dialect'='NHibernate.Dialect.MySQLDialect, NHibernate, Version=5.3.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4', 'hibernate.dialect'='NHibernate.Dialect.MySQLDialect, NHibernate, Version=5.3.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4', 'connection.connection_string'='Server=192.168.2.181;Port=3306;Database=databasebenchmark;Uid=samir;Pwd=123456;'}
+2020-12-28 11:53:36,293 [8] DEBUG NHibernate.Connection.DriverConnectionProvider [(null)] - Obtaining DbConnection from Driver
+2020-12-28 11:53:36,480 [8] DEBUG NHibernate.Connection.ConnectionProvider [(null)] - Closing connection
+2020-12-28 11:53:36,482 [8] DEBUG NHibernate.Impl.SessionFactoryObjectFactory [(null)] - initializing class SessionFactoryObjectFactory
+2020-12-28 11:53:36,483 [8] DEBUG NHibernate.Impl.SessionFactoryObjectFactory [(null)] - registered: 39f55f69e97f419e85671a60cf4b78d6(unnamed)
+2020-12-28 11:53:36,483 [8] INFO  NHibernate.Impl.SessionFactoryObjectFactory [(null)] - no name configured
+2020-12-28 11:53:36,515 [8] DEBUG NHibernate.Tuple.Entity.AbstractEntityTuplizer [(null)] - No custom accessors found for entity: DatabaseBenchmark.Core.Entity.RootBook
+2020-12-28 11:53:36,525 [8] DEBUG NHibernate.Tuple.Entity.PocoEntityTuplizer [(null)] - Create Instantiator using optimizer for:DatabaseBenchmark.Core.Entity.RootBook
+2020-12-28 11:53:36,558 [8] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister [(null)] - Static SQL for entity: DatabaseBenchmark.Core.Entity.RootBook
+2020-12-28 11:53:36,559 [8] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister [(null)] -  Version select: SELECT Id FROM tblRootBook WHERE Id = ?
+2020-12-28 11:53:36,559 [8] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister [(null)] -  Snapshot select: SELECT rootbook_.Id, rootbook_.BookKey as bookkey2_0_, rootbook_.BookValue as bookvalue3_0_ FROM tblRootBook rootbook_ WHERE rootbook_.Id=?
+2020-12-28 11:53:36,559 [8] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister [(null)] -  Insert 0: INSERT INTO tblRootBook (BookKey, BookValue, Id) VALUES (?, ?, ?)
+2020-12-28 11:53:36,559 [8] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister [(null)] -  Update 0: UPDATE tblRootBook SET BookKey = ?, BookValue = ? WHERE Id = ?
+2020-12-28 11:53:36,559 [8] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister [(null)] -  Delete 0: DELETE FROM tblRootBook WHERE Id = ?
+2020-12-28 11:53:36,559 [8] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister [(null)] -  Identity insert: INSERT INTO tblRootBook (BookKey, BookValue) VALUES (?, ?)
+2020-12-28 11:53:36,575 [8] DEBUG NHibernate.Loader.Entity.AbstractEntityLoader [(null)] - Static select for entity DatabaseBenchmark.Core.Entity.RootBook: SELECT rootbook0_.Id as id1_0_0_, rootbook0_.BookKey as bookkey2_0_0_, rootbook0_.BookValue as bookvalue3_0_0_ FROM tblRootBook rootbook0_ WHERE rootbook0_.Id=?
+2020-12-28 11:53:36,575 [8] DEBUG NHibernate.Loader.Entity.AbstractEntityLoader [(null)] - Static select for entity DatabaseBenchmark.Core.Entity.RootBook: SELECT rootbook0_.Id as id1_0_0_, rootbook0_.BookKey as bookkey2_0_0_, rootbook0_.BookValue as bookvalue3_0_0_ FROM tblRootBook rootbook0_ WHERE rootbook0_.Id=?
+2020-12-28 11:53:36,576 [8] DEBUG NHibernate.Loader.Entity.AbstractEntityLoader [(null)] - Static select for entity DatabaseBenchmark.Core.Entity.RootBook: SELECT rootbook0_.Id as id1_0_0_, rootbook0_.BookKey as bookkey2_0_0_, rootbook0_.BookValue as bookvalue3_0_0_ FROM tblRootBook rootbook0_ WHERE rootbook0_.Id=? for update
+2020-12-28 11:53:36,576 [8] DEBUG NHibernate.Loader.Entity.AbstractEntityLoader [(null)] - Static select for entity DatabaseBenchmark.Core.Entity.RootBook: SELECT rootbook0_.Id as id1_0_0_, rootbook0_.BookKey as bookkey2_0_0_, rootbook0_.BookValue as bookvalue3_0_0_ FROM tblRootBook rootbook0_ WHERE rootbook0_.Id=? for update
+2020-12-28 11:53:36,576 [8] DEBUG NHibernate.Loader.Entity.AbstractEntityLoader [(null)] - Static select for entity DatabaseBenchmark.Core.Entity.RootBook: SELECT rootbook0_.Id as id1_0_0_, rootbook0_.BookKey as bookkey2_0_0_, rootbook0_.BookValue as bookvalue3_0_0_ FROM tblRootBook rootbook0_ WHERE rootbook0_.Id=? for update
+2020-12-28 11:53:36,577 [8] DEBUG NHibernate.Loader.Entity.AbstractEntityLoader [(null)] - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity DatabaseBenchmark.Core.Entity.RootBook: SELECT rootbook0_.Id as id1_0_0_, rootbook0_.BookKey as bookkey2_0_0_, rootbook0_.BookValue as bookvalue3_0_0_ FROM tblRootBook rootbook0_ WHERE rootbook0_.Id=?
+2020-12-28 11:53:36,577 [8] DEBUG NHibernate.Loader.Entity.AbstractEntityLoader [(null)] - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity DatabaseBenchmark.Core.Entity.RootBook: SELECT rootbook0_.Id as id1_0_0_, rootbook0_.BookKey as bookkey2_0_0_, rootbook0_.BookValue as bookvalue3_0_0_ FROM tblRootBook rootbook0_ WHERE rootbook0_.Id=?
+2020-12-28 11:53:36,577 [8] DEBUG NHibernate.Impl.SessionFactoryImpl [(null)] - Instantiated session factory
+2020-12-28 11:53:36,579 [8] DEBUG NHibernate.Impl.SessionFactoryImpl [(null)] - Checking 0 named HQL queries
+2020-12-28 11:53:36,579 [8] DEBUG NHibernate.Impl.SessionFactoryImpl [(null)] - Checking 0 named SQL queries
+2020-12-28 11:53:36,580 [8] DEBUG NHibernate.Impl.SessionFactoryImpl+SessionBuilderImpl`1[[NHibernate.ISessionBuilder, NHibernate, Version=5.3.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4]] [(null)] - Opening Hibernate Session.
+2020-12-28 11:53:36,586 [8] DEBUG NHibernate.Impl.SessionImpl [(null)] - [session-id=d777f64f-1e0d-4ccc-acaf-56635cfbfa76] opened session at timestamp: 637447316165, for session factory: [/39f55f69e97f419e85671a60cf4b78d6]
+2020-12-28 11:53:36,634 [8] DEBUG NHibernate.Linq [(null)] - Expression (partially evaluated): value(NHibernate.Linq.NhQueryable`1[DatabaseBenchmark.Core.Entity.RootBook]).Where(x => (x.BookKey == "3c5ad64e-e6d0-46b2-a6b3-5cb36f4ebd9f")).FirstOrDefault()
+2020-12-28 11:53:36,647 [8] DEBUG NHibernate.Engine.Query.QueryPlanCache [(null)] - unable to locate HQL query plan in cache; generating (.FirstOrDefault[DatabaseBenchmark.Core.Entity.RootBook, DatabaseBenchmark.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null](.Where[DatabaseBenchmark.Core.Entity.RootBook, DatabaseBenchmark.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null](NHibernate.Linq.NhQueryable`1[DatabaseBenchmark.Core.Entity.RootBook], Quote((x, ) => (String.op_Equality(x.BookKey, p1<System.String>))), ), ))
+2020-12-28 11:53:36,734 [8] DEBUG NHibernate.Hql.Ast.ANTLR.HqlSqlWalker [(null)] - select << begin [level=1, statement=select]
+2020-12-28 11:53:36,742 [8] DEBUG NHibernate.Hql.Ast.ANTLR.Tree.FromElement [(null)] - FromClause{level=1} :  DatabaseBenchmark.Core.Entity.RootBook (x) -> rootbook0_
+2020-12-28 11:53:36,750 [8] DEBUG NHibernate.Hql.Ast.ANTLR.Tree.FromReferenceNode [(null)] - Resolved :  x -> rootbook0_.Id
+2020-12-28 11:53:36,761 [8] DEBUG NHibernate.Hql.Ast.ANTLR.Tree.FromReferenceNode [(null)] - Resolved :  x -> rootbook0_.Id
+2020-12-28 11:53:36,763 [8] INFO  NHibernate.Hql.Ast.ANTLR.Tree.FromElement [(null)] - handling property dereference [DatabaseBenchmark.Core.Entity.RootBook (x) -> BookKey (Class)]
+2020-12-28 11:53:36,764 [8] DEBUG NHibernate.Hql.Ast.ANTLR.Tree.DotNode [(null)] - getDataType() : BookKey -> NHibernate.Type.StringType
+2020-12-28 11:53:36,766 [8] DEBUG NHibernate.Hql.Ast.ANTLR.Tree.FromReferenceNode [(null)] - Resolved :  x.BookKey -> rootbook0_.BookKey
+2020-12-28 11:53:36,769 [8] DEBUG NHibernate.Hql.Ast.ANTLR.HqlSqlWalker [(null)] - select : finishing up [level=1, statement=select]
+2020-12-28 11:53:36,770 [8] DEBUG NHibernate.Hql.Ast.ANTLR.HqlSqlWalker [(null)] - processQuery() : ( SELECT ( {select clause} rootbook0_.Id ) ( FromClause{level=1} tblRootBook rootbook0_ ) ( where ( == ( rootbook0_.BookKey rootbook0_.Id BookKey ) ? ) ) ( take 1 ) )
+2020-12-28 11:53:36,782 [8] DEBUG NHibernate.Hql.Ast.ANTLR.Util.JoinProcessor [(null)] - Using FROM fragment [tblRootBook rootbook0_]
+2020-12-28 11:53:36,784 [8] DEBUG NHibernate.Hql.Ast.ANTLR.HqlSqlWalker [(null)] - select >> end [level=1, statement=select]
+2020-12-28 11:53:36,784 [8] DEBUG NHibernate.Hql.Ast.ANTLR.ErrorCounter [(null)] - throwQueryException() : no errors
+2020-12-28 11:53:36,809 [8] DEBUG NHibernate.Hql.Ast.ANTLR.HqlSqlGenerator [(null)] - SQL: select rootbook0_.Id as id1_0_, rootbook0_.BookKey as bookkey2_0_, rootbook0_.BookValue as bookvalue3_0_ from tblRootBook rootbook0_ where rootbook0_.BookKey=? limit 1
+2020-12-28 11:53:36,810 [8] DEBUG NHibernate.Hql.Ast.ANTLR.ErrorCounter [(null)] - throwQueryException() : no errors
+2020-12-28 11:53:36,826 [8] DEBUG NHibernate.Engine.Query.QueryPlanCache [(null)] - located HQL query plan in cache (.FirstOrDefault[DatabaseBenchmark.Core.Entity.RootBook, DatabaseBenchmark.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null](.Where[DatabaseBenchmark.Core.Entity.RootBook, DatabaseBenchmark.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null](NHibernate.Linq.NhQueryable`1[DatabaseBenchmark.Core.Entity.RootBook], Quote((x, ) => (String.op_Equality(x.BookKey, p1<System.String>))), ), ))
+2020-12-28 11:53:36,828 [8] DEBUG NHibernate.Engine.Query.HQLQueryPlan [(null)] - find: .FirstOrDefault[DatabaseBenchmark.Core.Entity.RootBook, DatabaseBenchmark.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null](.Where[DatabaseBenchmark.Core.Entity.RootBook, DatabaseBenchmark.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null](NHibernate.Linq.NhQueryable`1[DatabaseBenchmark.Core.Entity.RootBook], Quote((x, ) => (String.op_Equality(x.BookKey, p1<System.String>))), ), )
+2020-12-28 11:53:36,829 [8] DEBUG NHibernate.Engine.QueryParameters [(null)] - named parameters: {'p1'='3c5ad64e-e6d0-46b2-a6b3-5cb36f4ebd9f'}
+2020-12-28 11:53:36,849 [8] DEBUG NHibernate.AdoNet.AbstractBatcher [(null)] - Opened new DbCommand, open DbCommands: 1
+2020-12-28 11:53:36,849 [8] DEBUG NHibernate.AdoNet.AbstractBatcher [(null)] - Building an DbCommand object for the SqlString: select rootbook0_.Id as id1_0_, rootbook0_.BookKey as bookkey2_0_, rootbook0_.BookValue as bookvalue3_0_ from tblRootBook rootbook0_ where rootbook0_.BookKey=? limit 1
+2020-12-28 11:53:36,850 [8] DEBUG NHibernate.Type.StringType [(null)] - binding '3c5ad64e-e6d0-46b2-a6b3-5cb36f4ebd9f' to parameter: 0
+2020-12-28 11:53:36,856 [8] DEBUG NHibernate.SQL [(null)] - select rootbook0_.Id as id1_0_, rootbook0_.BookKey as bookkey2_0_, rootbook0_.BookValue as bookvalue3_0_ from tblRootBook rootbook0_ where rootbook0_.BookKey=?p0 limit 1;?p0 = '3c5ad64e-e6d0-46b2-a6b3-5cb36f4ebd9f' [Type: String (36:0:0)]
+2020-12-28 11:53:36,856 [8] DEBUG NHibernate.Connection.DriverConnectionProvider [(null)] - Obtaining DbConnection from Driver
+2020-12-28 11:53:36,861 [8] DEBUG NHibernate.AdoNet.AbstractBatcher [(null)] - ExecuteReader took 3 ms
+2020-12-28 11:53:36,861 [8] DEBUG NHibernate.AdoNet.AbstractBatcher [(null)] - Opened DbDataReader, open DbDataReaders: 1
+2020-12-28 11:53:36,862 [8] DEBUG NHibernate.Loader.Loader [(null)] - processing result set
+2020-12-28 11:53:36,863 [8] DEBUG NHibernate.Loader.Loader [(null)] - result set row: 0
+2020-12-28 11:53:36,865 [8] DEBUG NHibernate.Type.Int32Type [(null)] - returning '3' as column: id1_0_
+2020-12-28 11:53:36,866 [8] DEBUG NHibernate.Loader.Loader [(null)] - result row: EntityKey[DatabaseBenchmark.Core.Entity.RootBook#3]
+2020-12-28 11:53:36,869 [8] DEBUG NHibernate.Loader.Loader [(null)] - Initializing object from DataReader: [DatabaseBenchmark.Core.Entity.RootBook#3]
+2020-12-28 11:53:36,873 [8] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister [(null)] - Hydrating entity: [DatabaseBenchmark.Core.Entity.RootBook#3]
+2020-12-28 11:53:36,873 [8] DEBUG NHibernate.Type.StringType [(null)] - returning '3c5ad64e-e6d0-46b2-a6b3-5cb36f4ebd9f' as column: bookkey2_0_
+2020-12-28 11:53:36,873 [8] DEBUG NHibernate.Type.StringType [(null)] - returning '{"Key":"3c5ad64e-e6d0-46b2-a6b3-5cb36f4ebd9f","Books":[{"Id":1,"Name":"Book1","Author":"Author1"},{"Id":2,"Name":"Book2","Author":"Author2"},{"Id":3,"Name":"Book3","Author":"Author3"},{"Id":4,"Name":"Book4","Author":"Author4"},{"Id":5,"Name":"Book5","Author":"Author5"},{"Id":6,"Name":"Book6","Author":"Author6"},{"Id":7,"Name":"Book7","Author":"Author7"},{"Id":8,"Name":"Book8","Author":"Author8"},{"Id":9,"Name":"Book9","Author":"Author9"},{"Id":10,"Name":"Book10","Author":"Author10"},{"Id":11,"Name":"Book11","Author":"Author11"},{"Id":12,"Name":"Book12","Author":"Author12"},{"Id":13,"Name":"Book13","Author":"Author13"},{"Id":14,"Name":"Book14","Author":"Author14"},{"Id":15,"Name":"Book15","Author":"Author15"},{"Id":16,"Name":"Book16","Author":"Author16"},{"Id":17,"Name":"Book17","Author":"Author17"},{"Id":18,"Name":"Book18","Author":"Author18"},{"Id":19,"Name":"Book19","Author":"Author19"},{"Id":20,"Name":"Book20","Author":"Author20"},{"Id":21,"Name":"Book21","Author":"Author21"},{"Id":22,"Name":"Book22","Author":"Author22"},{"Id":23,"Name":"Book23","Author":"Author23"},{"Id":24,"Name":"Book24","Author":"Author24"},{"Id":25,"Name":"Book25","Author":"Author25"},{"Id":26,"Name":"Book26","Author":"Author26"},{"Id":27,"Name":"Book27","Author":"Author27"},{"Id":28,"Name":"Book28","Author":"Author28"},{"Id":29,"Name":"Book29","Author":"Author29"},{"Id":30,"Name":"Book30","Author":"Author30"},{"Id":31,"Name":"Book31","Author":"Author31"},{"Id":32,"Name":"Book32","Author":"Author32"},{"Id":33,"Name":"Book33","Author":"Author33"},{"Id":34,"Name":"Book34","Author":"Author34"},{"Id":35,"Name":"Book35","Author":"Author35"},{"Id":36,"Name":"Book36","Author":"Author36"},{"Id":37,"Name":"Book37","Author":"Author37"},{"Id":38,"Name":"Book38","Author":"Author38"},{"Id":39,"Name":"Book39","Author":"Author39"},{"Id":40,"Name":"Book40","Author":"Author40"},{"Id":41,"Name":"Book41","Author":"Author41"},{"Id":42,"Name":"Book42","Author":"Author42"},{"Id":43,"Name":"Book43","Author":"Author43"},{"Id":44,"Name":"Book44","Author":"Author44"},{"Id":45,"Name":"Book45","Author":"Author45"},{"Id":46,"Name":"Book46","Author":"Author46"},{"Id":47,"Name":"Book47","Author":"Author47"},{"Id":48,"Name":"Book48","Author":"Author48"},{"Id":49,"Name":"Book49","Author":"Author49"},{"Id":50,"Name":"Book50","Author":"Author50"},{"Id":51,"Name":"Book51","Author":"Author51"},{"Id":52,"Name":"Book52","Author":"Author52"},{"Id":53,"Name":"Book53","Author":"Author53"},{"Id":54,"Name":"Book54","Author":"Author54"},{"Id":55,"Name":"Book55","Author":"Author55"},{"Id":56,"Name":"Book56","Author":"Author56"},{"Id":57,"Name":"Book57","Author":"Author57"},{"Id":58,"Name":"Book58","Author":"Author58"},{"Id":59,"Name":"Book59","Author":"Author59"},{"Id":60,"Name":"Book60","Author":"Author60"},{"Id":61,"Name":"Book61","Author":"Author61"},{"Id":62,"Name":"Book62","Author":"Author62"},{"Id":63,"Name":"Book63","Author":"Author63"},{"Id":64,"Name":"Book64","Author":"Author64"},{"Id":65,"Name":"Book65","Author":"Author65"},{"Id":66,"Name":"Book66","Author":"Author66"},{"Id":67,"Name":"Book67","Author":"Author67"},{"Id":68,"Name":"Book68","Author":"Author68"},{"Id":69,"Name":"Book69","Author":"Author69"},{"Id":70,"Name":"Book70","Author":"Author70"},{"Id":71,"Name":"Book71","Author":"Author71"},{"Id":72,"Name":"Book72","Author":"Author72"},{"Id":73,"Name":"Book73","Author":"Author73"},{"Id":74,"Name":"Book74","Author":"Author74"},{"Id":75,"Name":"Book75","Author":"Author75"},{"Id":76,"Name":"Book76","Author":"Author76"},{"Id":77,"Name":"Book77","Author":"Author77"},{"Id":78,"Name":"Book78","Author":"Author78"},{"Id":79,"Name":"Book79","Author":"Author79"},{"Id":80,"Name":"Book80","Author":"Author80"},{"Id":81,"Name":"Book81","Author":"Author81"},{"Id":82,"Name":"Book82","Author":"Author82"},{"Id":83,"Name":"Book83","Author":"Author83"},{"Id":84,"Name":"Book84","Author":"Author84"},{"Id":85,"Name":"Book85","Author":"Author85"},{"Id":86,"Name":"Book86","Author":"Author86"},{"Id":87,"Name":"Book87","Author":"Author87"},{"Id":88,"Name":"Book88","Author":"Author88"},{"Id":89,"Name":"Book89","Author":"Author89"},{"Id":90,"Name":"Book90","Author":"Author90"},{"Id":91,"Name":"Book91","Author":"Author91"},{"Id":92,"Name":"Book92","Author":"Author92"},{"Id":93,"Name":"Book93","Author":"Author93"},{"Id":94,"Name":"Book94","Author":"Author94"},{"Id":95,"Name":"Book95","Author":"Author95"},{"Id":96,"Name":"Book96","Author":"Author96"},{"Id":97,"Name":"Book97","Author":"Author97"},{"Id":98,"Name":"Book98","Author":"Author98"},{"Id":99,"Name":"Book99","Author":"Author99"},{"Id":100,"Name":"Book100","Author":"Author100"}]}' as column: bookvalue3_0_
+2020-12-28 11:53:36,876 [8] DEBUG NHibernate.Loader.Loader [(null)] - done processing result set (1 rows)
+2020-12-28 11:53:36,877 [8] DEBUG NHibernate.AdoNet.AbstractBatcher [(null)] - Closed DbDataReader, open DbDataReaders :0
+2020-12-28 11:53:36,877 [8] DEBUG NHibernate.AdoNet.AbstractBatcher [(null)] - DataReader was closed after 19 ms
+2020-12-28 11:53:36,878 [8] DEBUG NHibernate.AdoNet.AbstractBatcher [(null)] - Closed DbCommand, open DbCommands: 0
+2020-12-28 11:53:36,879 [8] DEBUG NHibernate.AdoNet.ConnectionManager [(null)] - Aggressively releasing database connection
+2020-12-28 11:53:36,879 [8] DEBUG NHibernate.Connection.ConnectionProvider [(null)] - Closing connection
+2020-12-28 11:53:36,880 [8] DEBUG NHibernate.Loader.Loader [(null)] - total objects hydrated: 1
+2020-12-28 11:53:36,881 [8] DEBUG NHibernate.Engine.TwoPhaseLoad [(null)] - resolving associations for [DatabaseBenchmark.Core.Entity.RootBook#3]
+2020-12-28 11:53:36,883 [8] DEBUG NHibernate.Engine.TwoPhaseLoad [(null)] - done materializing entity [DatabaseBenchmark.Core.Entity.RootBook#3]
+2020-12-28 11:53:36,885 [8] DEBUG NHibernate.Engine.StatefulPersistenceContext [(null)] - initializing non-lazy collections
+2020-12-28 11:53:36,886 [8] DEBUG NHibernate.AdoNet.ConnectionManager [(null)] - After autocommit
+2020-12-28 11:53:36,886 [8] DEBUG NHibernate.Impl.SessionImpl [(null)] - transaction completion
+2020-12-28 11:53:36,889 [8] DEBUG NHibernate.Impl.SessionImpl [(null)] - [session-id=d777f64f-1e0d-4ccc-acaf-56635cfbfa76] running ISession.Dispose()
+2020-12-28 11:53:36,889 [8] DEBUG NHibernate.Impl.SessionImpl [(null)] - [session-id=d777f64f-1e0d-4ccc-acaf-56635cfbfa76] executing real Dispose(True)
+2020-12-28 11:53:36,889 [8] DEBUG NHibernate.Impl.SessionImpl [(null)] - closing session
+2020-12-28 11:53:36,890 [8] DEBUG NHibernate.AdoNet.AbstractBatcher [(null)] - running BatcherImpl.Dispose(true)
+2020-12-28 11:53:57,349 [8] INFO  DatabaseBenchmark.Web.Controllers.BooksController [(null)] - 00:00:01
+2020-12-28 12:02:09,074 [6] INFO  NHibernate.Cfg.Environment [(null)] - NHibernate 5.3.3+7530a259e1b52ee8a9722e7bbd728ac913ef68f7 (assembly 5.3.0.0)
+2020-12-28 12:02:09,086 [6] INFO  NHibernate.Cfg.Environment [(null)] - hibernate-configuration section not found in application configuration file
+2020-12-28 12:02:09,087 [6] INFO  NHibernate.Cfg.Environment [(null)] - Bytecode provider name : lcg
+2020-12-28 12:02:09,088 [6] INFO  NHibernate.Cfg.Environment [(null)] - Objects factory class : NHibernate.Bytecode.ActivatorObjectsFactory
+2020-12-28 12:02:09,088 [6] INFO  NHibernate.Cfg.Environment [(null)] - Using reflection optimizer
+2020-12-28 12:02:09,157 [6] DEBUG NHibernate.Cfg.Configuration [(null)] - Mapping XML:
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"><class xmlns="urn:nhibernate-mapping-2.2" name="DatabaseBenchmark.Core.Entity.RootBook, DatabaseBenchmark.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" table="tblRootBook"><id name="Id" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="Id" /><generator class="identity" /></id><property name="BookKey" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="BookKey" /></property><property name="BookValue" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="BookValue" /></property></class></hibernate-mapping>
+2020-12-28 12:02:09,420 [6] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - Mapping class: DatabaseBenchmark.Core.Entity.RootBook -> tblRootBook
+2020-12-28 12:02:09,438 [6] DEBUG NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - Mapped property: Id -> Id, type: Int32
+2020-12-28 12:02:09,446 [6] DEBUG NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - Mapped property: BookKey -> BookKey, type: String
+2020-12-28 12:02:09,446 [6] DEBUG NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - Mapped property: BookValue -> BookValue, type: String
+2020-12-28 12:02:09,455 [6] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-12-28 12:02:09,463 [6] INFO  NHibernate.Cfg.Configuration [(null)] - checking mappings queue
+2020-12-28 12:02:09,464 [6] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-many association mappings
+2020-12-28 12:02:09,464 [6] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-one association property references
+2020-12-28 12:02:09,464 [6] INFO  NHibernate.Cfg.Configuration [(null)] - processing foreign key constraints
+2020-12-28 12:02:09,465 [6] INFO  NHibernate.Cfg.Configuration [(null)] - processing filters (second pass)
+2020-12-28 12:02:09,472 [6] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-12-28 12:02:09,475 [6] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-12-28 12:02:09,509 [6] INFO  NHibernate.Exceptions.SQLExceptionConverterFactory [(null)] - Using dialect defined converter
+2020-12-28 12:02:09,510 [6] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Generate SQL with comments: disabled
+2020-12-28 12:02:09,511 [6] INFO  NHibernate.Connection.ConnectionProviderFactory [(null)] - Initializing connection provider: NHibernate.Connection.DriverConnectionProvider
+2020-12-28 12:02:09,511 [6] INFO  NHibernate.Connection.ConnectionProvider [(null)] - Configuring ConnectionProvider
+2020-12-28 12:02:09,524 [6] ERROR NHibernate.Util.ReflectHelper [(null)] - Could not load type MySql.Data.MySqlClient.MySqlConnection, MySql.Data.
+System.IO.FileNotFoundException: Could not load file or assembly 'MySql.Data' or one of its dependencies. The system cannot find the file specified.
+File name: 'MySql.Data'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+=== Pre-bind state information ===
+LOG: DisplayName = MySql.Data
+ (Partial)
+WRN: Partial binding information was supplied for an assembly:
+WRN: Assembly Name: MySql.Data | Domain ID: 2
+WRN: A partial bind occurs when only part of the assembly display name is provided.
+WRN: This might result in the binder loading an incorrect assembly.
+WRN: It is recommended to provide a fully specified textual identity for the assembly,
+WRN: that consists of the simple name, version, culture, and public key token.
+WRN: See whitepaper http://go.microsoft.com/fwlink/?LinkId=109270 for more information and common solutions to this issue.
+LOG: Appbase = file:///D:/Github_Project/DatabaseBenchmark/DatabaseBenchmark/DatabaseBenchmark.Web/
+LOG: Initial PrivatePath = D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\bin
+Calling assembly : NHibernate, Version=5.3.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\web.config
+LOG: Using host configuration file: C:\Users\OSL\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Policy not being applied to reference at this time (private, custom, partial, or location-based assembly bind).
+LOG: The same bind was seen before, and was failed with hr = 0x80070002.
+
+2020-12-28 12:02:09,532 [6] ERROR NHibernate.Util.ReflectHelper [(null)] - Could not load type MySql.Data.MySqlClient.MySqlCommand, MySql.Data.
+System.IO.FileNotFoundException: Could not load file or assembly 'MySql.Data' or one of its dependencies. The system cannot find the file specified.
+File name: 'MySql.Data'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+=== Pre-bind state information ===
+LOG: DisplayName = MySql.Data
+ (Partial)
+WRN: Partial binding information was supplied for an assembly:
+WRN: Assembly Name: MySql.Data | Domain ID: 2
+WRN: A partial bind occurs when only part of the assembly display name is provided.
+WRN: This might result in the binder loading an incorrect assembly.
+WRN: It is recommended to provide a fully specified textual identity for the assembly,
+WRN: that consists of the simple name, version, culture, and public key token.
+WRN: See whitepaper http://go.microsoft.com/fwlink/?LinkId=109270 for more information and common solutions to this issue.
+LOG: Appbase = file:///D:/Github_Project/DatabaseBenchmark/DatabaseBenchmark/DatabaseBenchmark.Web/
+LOG: Initial PrivatePath = D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\bin
+Calling assembly : NHibernate, Version=5.3.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\web.config
+LOG: Using host configuration file: C:\Users\OSL\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Policy not being applied to reference at this time (private, custom, partial, or location-based assembly bind).
+LOG: The same bind was seen before, and was failed with hr = 0x80070002.
+
+2020-12-28 12:02:09,558 [6] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Transaction factory: NHibernate.Transaction.AdoNetWithSystemTransactionFactory
+2020-12-28 12:02:09,558 [6] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Optimize cache for minimal puts: False
+2020-12-28 12:02:09,559 [6] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Connection release mode: auto
+2020-12-28 12:02:09,559 [6] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Default batch fetch size: 1
+2020-12-28 12:02:09,559 [6] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Statistics: disabled
+2020-12-28 12:02:09,559 [6] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Deleted entity synthetic identifier rollback: disabled
+2020-12-28 12:02:09,559 [6] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
+2020-12-28 12:02:09,560 [6] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Query provider: NHibernate.Linq.DefaultQueryProvider
+2020-12-28 12:02:09,561 [6] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Query language substitutions: {}
+2020-12-28 12:02:09,561 [6] INFO  NHibernate.Cfg.SettingsFactory [(null)] - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=5.3.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2020-12-28 12:02:09,562 [6] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Order SQL inserts for batching: disabled
+2020-12-28 12:02:09,562 [6] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Order SQL updates for batching: disabled
+2020-12-28 12:02:09,562 [6] DEBUG NHibernate.Cfg.SettingsFactory [(null)] - Wrap result sets: disabled
+2020-12-28 12:02:09,562 [6] DEBUG NHibernate.Cfg.SettingsFactory [(null)] - Batch versioned data: disabled
+2020-12-28 12:02:09,563 [6] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Batcher factory: NHibernate.AdoNet.NonBatchingBatcherFactory, NHibernate, Version=5.3.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2020-12-28 12:02:09,563 [6] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Default flush mode: Auto
+2020-12-28 12:02:09,563 [6] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Named query checking : enabled
+2020-12-28 12:02:09,564 [6] DEBUG NHibernate.Cfg.SettingsFactory [(null)] - Track session id: enabled
+2020-12-28 12:02:09,571 [6] INFO  NHibernate.Impl.SessionFactoryImpl [(null)] - building session factory
+2020-12-28 12:02:09,571 [6] DEBUG NHibernate.Impl.SessionFactoryImpl [(null)] - Session factory constructed with filter configurations : {}
+2020-12-28 12:02:09,572 [6] DEBUG NHibernate.Impl.SessionFactoryImpl [(null)] - instantiating session factory with properties: {'use_reflection_optimizer'='True', 'connection.provider'='NHibernate.Connection.DriverConnectionProvider', 'connection.driver_class'='NHibernate.Driver.MySqlDataDriver, NHibernate, Version=5.3.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4', 'dialect'='NHibernate.Dialect.MySQLDialect, NHibernate, Version=5.3.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4', 'hibernate.dialect'='NHibernate.Dialect.MySQLDialect, NHibernate, Version=5.3.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4', 'connection.connection_string'='Server=192.168.2.181;Port=3306;Database=databasebenchmark;Uid=samir;Pwd=123456;'}
+2020-12-28 12:02:09,573 [6] DEBUG NHibernate.Connection.DriverConnectionProvider [(null)] - Obtaining DbConnection from Driver
+2020-12-28 12:02:09,751 [6] DEBUG NHibernate.Connection.ConnectionProvider [(null)] - Closing connection
+2020-12-28 12:02:09,753 [6] DEBUG NHibernate.Impl.SessionFactoryObjectFactory [(null)] - initializing class SessionFactoryObjectFactory
+2020-12-28 12:02:09,753 [6] DEBUG NHibernate.Impl.SessionFactoryObjectFactory [(null)] - registered: dc189a96bb604a758aad0ceb75695f7a(unnamed)
+2020-12-28 12:02:09,754 [6] INFO  NHibernate.Impl.SessionFactoryObjectFactory [(null)] - no name configured
+2020-12-28 12:02:09,785 [6] DEBUG NHibernate.Tuple.Entity.AbstractEntityTuplizer [(null)] - No custom accessors found for entity: DatabaseBenchmark.Core.Entity.RootBook
+2020-12-28 12:02:09,795 [6] DEBUG NHibernate.Tuple.Entity.PocoEntityTuplizer [(null)] - Create Instantiator using optimizer for:DatabaseBenchmark.Core.Entity.RootBook
+2020-12-28 12:02:09,829 [6] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister [(null)] - Static SQL for entity: DatabaseBenchmark.Core.Entity.RootBook
+2020-12-28 12:02:09,829 [6] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister [(null)] -  Version select: SELECT Id FROM tblRootBook WHERE Id = ?
+2020-12-28 12:02:09,829 [6] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister [(null)] -  Snapshot select: SELECT rootbook_.Id, rootbook_.BookKey as bookkey2_0_, rootbook_.BookValue as bookvalue3_0_ FROM tblRootBook rootbook_ WHERE rootbook_.Id=?
+2020-12-28 12:02:09,830 [6] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister [(null)] -  Insert 0: INSERT INTO tblRootBook (BookKey, BookValue, Id) VALUES (?, ?, ?)
+2020-12-28 12:02:09,830 [6] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister [(null)] -  Update 0: UPDATE tblRootBook SET BookKey = ?, BookValue = ? WHERE Id = ?
+2020-12-28 12:02:09,830 [6] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister [(null)] -  Delete 0: DELETE FROM tblRootBook WHERE Id = ?
+2020-12-28 12:02:09,830 [6] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister [(null)] -  Identity insert: INSERT INTO tblRootBook (BookKey, BookValue) VALUES (?, ?)
+2020-12-28 12:02:09,846 [6] DEBUG NHibernate.Loader.Entity.AbstractEntityLoader [(null)] - Static select for entity DatabaseBenchmark.Core.Entity.RootBook: SELECT rootbook0_.Id as id1_0_0_, rootbook0_.BookKey as bookkey2_0_0_, rootbook0_.BookValue as bookvalue3_0_0_ FROM tblRootBook rootbook0_ WHERE rootbook0_.Id=?
+2020-12-28 12:02:09,846 [6] DEBUG NHibernate.Loader.Entity.AbstractEntityLoader [(null)] - Static select for entity DatabaseBenchmark.Core.Entity.RootBook: SELECT rootbook0_.Id as id1_0_0_, rootbook0_.BookKey as bookkey2_0_0_, rootbook0_.BookValue as bookvalue3_0_0_ FROM tblRootBook rootbook0_ WHERE rootbook0_.Id=?
+2020-12-28 12:02:09,846 [6] DEBUG NHibernate.Loader.Entity.AbstractEntityLoader [(null)] - Static select for entity DatabaseBenchmark.Core.Entity.RootBook: SELECT rootbook0_.Id as id1_0_0_, rootbook0_.BookKey as bookkey2_0_0_, rootbook0_.BookValue as bookvalue3_0_0_ FROM tblRootBook rootbook0_ WHERE rootbook0_.Id=? for update
+2020-12-28 12:02:09,846 [6] DEBUG NHibernate.Loader.Entity.AbstractEntityLoader [(null)] - Static select for entity DatabaseBenchmark.Core.Entity.RootBook: SELECT rootbook0_.Id as id1_0_0_, rootbook0_.BookKey as bookkey2_0_0_, rootbook0_.BookValue as bookvalue3_0_0_ FROM tblRootBook rootbook0_ WHERE rootbook0_.Id=? for update
+2020-12-28 12:02:09,847 [6] DEBUG NHibernate.Loader.Entity.AbstractEntityLoader [(null)] - Static select for entity DatabaseBenchmark.Core.Entity.RootBook: SELECT rootbook0_.Id as id1_0_0_, rootbook0_.BookKey as bookkey2_0_0_, rootbook0_.BookValue as bookvalue3_0_0_ FROM tblRootBook rootbook0_ WHERE rootbook0_.Id=? for update
+2020-12-28 12:02:09,848 [6] DEBUG NHibernate.Loader.Entity.AbstractEntityLoader [(null)] - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity DatabaseBenchmark.Core.Entity.RootBook: SELECT rootbook0_.Id as id1_0_0_, rootbook0_.BookKey as bookkey2_0_0_, rootbook0_.BookValue as bookvalue3_0_0_ FROM tblRootBook rootbook0_ WHERE rootbook0_.Id=?
+2020-12-28 12:02:09,848 [6] DEBUG NHibernate.Loader.Entity.AbstractEntityLoader [(null)] - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity DatabaseBenchmark.Core.Entity.RootBook: SELECT rootbook0_.Id as id1_0_0_, rootbook0_.BookKey as bookkey2_0_0_, rootbook0_.BookValue as bookvalue3_0_0_ FROM tblRootBook rootbook0_ WHERE rootbook0_.Id=?
+2020-12-28 12:02:09,848 [6] DEBUG NHibernate.Impl.SessionFactoryImpl [(null)] - Instantiated session factory
+2020-12-28 12:02:09,850 [6] DEBUG NHibernate.Impl.SessionFactoryImpl [(null)] - Checking 0 named HQL queries
+2020-12-28 12:02:09,850 [6] DEBUG NHibernate.Impl.SessionFactoryImpl [(null)] - Checking 0 named SQL queries
+2020-12-28 12:02:09,851 [6] DEBUG NHibernate.Impl.SessionFactoryImpl+SessionBuilderImpl`1[[NHibernate.ISessionBuilder, NHibernate, Version=5.3.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4]] [(null)] - Opening Hibernate Session.
+2020-12-28 12:02:09,857 [6] DEBUG NHibernate.Impl.SessionImpl [(null)] - [session-id=e6c66900-2d7d-4de8-ac33-88e4116431fc] opened session at timestamp: 637447321298, for session factory: [/dc189a96bb604a758aad0ceb75695f7a]
+2020-12-28 12:02:09,904 [6] DEBUG NHibernate.Linq [(null)] - Expression (partially evaluated): value(NHibernate.Linq.NhQueryable`1[DatabaseBenchmark.Core.Entity.RootBook]).Where(x => (x.BookKey == "3c5ad64e-e6d0-46b2-a6b3-5cb36f4ebd9f")).FirstOrDefault()
+2020-12-28 12:02:09,917 [6] DEBUG NHibernate.Engine.Query.QueryPlanCache [(null)] - unable to locate HQL query plan in cache; generating (.FirstOrDefault[DatabaseBenchmark.Core.Entity.RootBook, DatabaseBenchmark.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null](.Where[DatabaseBenchmark.Core.Entity.RootBook, DatabaseBenchmark.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null](NHibernate.Linq.NhQueryable`1[DatabaseBenchmark.Core.Entity.RootBook], Quote((x, ) => (String.op_Equality(x.BookKey, p1<System.String>))), ), ))
+2020-12-28 12:02:10,004 [6] DEBUG NHibernate.Hql.Ast.ANTLR.HqlSqlWalker [(null)] - select << begin [level=1, statement=select]
+2020-12-28 12:02:10,012 [6] DEBUG NHibernate.Hql.Ast.ANTLR.Tree.FromElement [(null)] - FromClause{level=1} :  DatabaseBenchmark.Core.Entity.RootBook (x) -> rootbook0_
+2020-12-28 12:02:10,020 [6] DEBUG NHibernate.Hql.Ast.ANTLR.Tree.FromReferenceNode [(null)] - Resolved :  x -> rootbook0_.Id
+2020-12-28 12:02:10,031 [6] DEBUG NHibernate.Hql.Ast.ANTLR.Tree.FromReferenceNode [(null)] - Resolved :  x -> rootbook0_.Id
+2020-12-28 12:02:10,033 [6] INFO  NHibernate.Hql.Ast.ANTLR.Tree.FromElement [(null)] - handling property dereference [DatabaseBenchmark.Core.Entity.RootBook (x) -> BookKey (Class)]
+2020-12-28 12:02:10,034 [6] DEBUG NHibernate.Hql.Ast.ANTLR.Tree.DotNode [(null)] - getDataType() : BookKey -> NHibernate.Type.StringType
+2020-12-28 12:02:10,036 [6] DEBUG NHibernate.Hql.Ast.ANTLR.Tree.FromReferenceNode [(null)] - Resolved :  x.BookKey -> rootbook0_.BookKey
+2020-12-28 12:02:10,040 [6] DEBUG NHibernate.Hql.Ast.ANTLR.HqlSqlWalker [(null)] - select : finishing up [level=1, statement=select]
+2020-12-28 12:02:10,041 [6] DEBUG NHibernate.Hql.Ast.ANTLR.HqlSqlWalker [(null)] - processQuery() : ( SELECT ( {select clause} rootbook0_.Id ) ( FromClause{level=1} tblRootBook rootbook0_ ) ( where ( == ( rootbook0_.BookKey rootbook0_.Id BookKey ) ? ) ) ( take 1 ) )
+2020-12-28 12:02:10,052 [6] DEBUG NHibernate.Hql.Ast.ANTLR.Util.JoinProcessor [(null)] - Using FROM fragment [tblRootBook rootbook0_]
+2020-12-28 12:02:10,053 [6] DEBUG NHibernate.Hql.Ast.ANTLR.HqlSqlWalker [(null)] - select >> end [level=1, statement=select]
+2020-12-28 12:02:10,053 [6] DEBUG NHibernate.Hql.Ast.ANTLR.ErrorCounter [(null)] - throwQueryException() : no errors
+2020-12-28 12:02:10,079 [6] DEBUG NHibernate.Hql.Ast.ANTLR.HqlSqlGenerator [(null)] - SQL: select rootbook0_.Id as id1_0_, rootbook0_.BookKey as bookkey2_0_, rootbook0_.BookValue as bookvalue3_0_ from tblRootBook rootbook0_ where rootbook0_.BookKey=? limit 1
+2020-12-28 12:02:10,079 [6] DEBUG NHibernate.Hql.Ast.ANTLR.ErrorCounter [(null)] - throwQueryException() : no errors
+2020-12-28 12:02:10,095 [6] DEBUG NHibernate.Engine.Query.QueryPlanCache [(null)] - located HQL query plan in cache (.FirstOrDefault[DatabaseBenchmark.Core.Entity.RootBook, DatabaseBenchmark.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null](.Where[DatabaseBenchmark.Core.Entity.RootBook, DatabaseBenchmark.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null](NHibernate.Linq.NhQueryable`1[DatabaseBenchmark.Core.Entity.RootBook], Quote((x, ) => (String.op_Equality(x.BookKey, p1<System.String>))), ), ))
+2020-12-28 12:02:10,097 [6] DEBUG NHibernate.Engine.Query.HQLQueryPlan [(null)] - find: .FirstOrDefault[DatabaseBenchmark.Core.Entity.RootBook, DatabaseBenchmark.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null](.Where[DatabaseBenchmark.Core.Entity.RootBook, DatabaseBenchmark.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null](NHibernate.Linq.NhQueryable`1[DatabaseBenchmark.Core.Entity.RootBook], Quote((x, ) => (String.op_Equality(x.BookKey, p1<System.String>))), ), )
+2020-12-28 12:02:10,098 [6] DEBUG NHibernate.Engine.QueryParameters [(null)] - named parameters: {'p1'='3c5ad64e-e6d0-46b2-a6b3-5cb36f4ebd9f'}
+2020-12-28 12:02:10,119 [6] DEBUG NHibernate.AdoNet.AbstractBatcher [(null)] - Opened new DbCommand, open DbCommands: 1
+2020-12-28 12:02:10,119 [6] DEBUG NHibernate.AdoNet.AbstractBatcher [(null)] - Building an DbCommand object for the SqlString: select rootbook0_.Id as id1_0_, rootbook0_.BookKey as bookkey2_0_, rootbook0_.BookValue as bookvalue3_0_ from tblRootBook rootbook0_ where rootbook0_.BookKey=? limit 1
+2020-12-28 12:02:10,120 [6] DEBUG NHibernate.Type.StringType [(null)] - binding '3c5ad64e-e6d0-46b2-a6b3-5cb36f4ebd9f' to parameter: 0
+2020-12-28 12:02:10,125 [6] DEBUG NHibernate.SQL [(null)] - select rootbook0_.Id as id1_0_, rootbook0_.BookKey as bookkey2_0_, rootbook0_.BookValue as bookvalue3_0_ from tblRootBook rootbook0_ where rootbook0_.BookKey=?p0 limit 1;?p0 = '3c5ad64e-e6d0-46b2-a6b3-5cb36f4ebd9f' [Type: String (36:0:0)]
+2020-12-28 12:02:10,126 [6] DEBUG NHibernate.Connection.DriverConnectionProvider [(null)] - Obtaining DbConnection from Driver
+2020-12-28 12:02:10,130 [6] DEBUG NHibernate.AdoNet.AbstractBatcher [(null)] - ExecuteReader took 3 ms
+2020-12-28 12:02:10,130 [6] DEBUG NHibernate.AdoNet.AbstractBatcher [(null)] - Opened DbDataReader, open DbDataReaders: 1
+2020-12-28 12:02:10,131 [6] DEBUG NHibernate.Loader.Loader [(null)] - processing result set
+2020-12-28 12:02:10,132 [6] DEBUG NHibernate.Loader.Loader [(null)] - result set row: 0
+2020-12-28 12:02:10,134 [6] DEBUG NHibernate.Type.Int32Type [(null)] - returning '3' as column: id1_0_
+2020-12-28 12:02:10,135 [6] DEBUG NHibernate.Loader.Loader [(null)] - result row: EntityKey[DatabaseBenchmark.Core.Entity.RootBook#3]
+2020-12-28 12:02:10,138 [6] DEBUG NHibernate.Loader.Loader [(null)] - Initializing object from DataReader: [DatabaseBenchmark.Core.Entity.RootBook#3]
+2020-12-28 12:02:10,142 [6] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister [(null)] - Hydrating entity: [DatabaseBenchmark.Core.Entity.RootBook#3]
+2020-12-28 12:02:10,142 [6] DEBUG NHibernate.Type.StringType [(null)] - returning '3c5ad64e-e6d0-46b2-a6b3-5cb36f4ebd9f' as column: bookkey2_0_
+2020-12-28 12:02:10,142 [6] DEBUG NHibernate.Type.StringType [(null)] - returning '{"Key":"3c5ad64e-e6d0-46b2-a6b3-5cb36f4ebd9f","Books":[{"Id":1,"Name":"Book1","Author":"Author1"},{"Id":2,"Name":"Book2","Author":"Author2"},{"Id":3,"Name":"Book3","Author":"Author3"},{"Id":4,"Name":"Book4","Author":"Author4"},{"Id":5,"Name":"Book5","Author":"Author5"},{"Id":6,"Name":"Book6","Author":"Author6"},{"Id":7,"Name":"Book7","Author":"Author7"},{"Id":8,"Name":"Book8","Author":"Author8"},{"Id":9,"Name":"Book9","Author":"Author9"},{"Id":10,"Name":"Book10","Author":"Author10"},{"Id":11,"Name":"Book11","Author":"Author11"},{"Id":12,"Name":"Book12","Author":"Author12"},{"Id":13,"Name":"Book13","Author":"Author13"},{"Id":14,"Name":"Book14","Author":"Author14"},{"Id":15,"Name":"Book15","Author":"Author15"},{"Id":16,"Name":"Book16","Author":"Author16"},{"Id":17,"Name":"Book17","Author":"Author17"},{"Id":18,"Name":"Book18","Author":"Author18"},{"Id":19,"Name":"Book19","Author":"Author19"},{"Id":20,"Name":"Book20","Author":"Author20"},{"Id":21,"Name":"Book21","Author":"Author21"},{"Id":22,"Name":"Book22","Author":"Author22"},{"Id":23,"Name":"Book23","Author":"Author23"},{"Id":24,"Name":"Book24","Author":"Author24"},{"Id":25,"Name":"Book25","Author":"Author25"},{"Id":26,"Name":"Book26","Author":"Author26"},{"Id":27,"Name":"Book27","Author":"Author27"},{"Id":28,"Name":"Book28","Author":"Author28"},{"Id":29,"Name":"Book29","Author":"Author29"},{"Id":30,"Name":"Book30","Author":"Author30"},{"Id":31,"Name":"Book31","Author":"Author31"},{"Id":32,"Name":"Book32","Author":"Author32"},{"Id":33,"Name":"Book33","Author":"Author33"},{"Id":34,"Name":"Book34","Author":"Author34"},{"Id":35,"Name":"Book35","Author":"Author35"},{"Id":36,"Name":"Book36","Author":"Author36"},{"Id":37,"Name":"Book37","Author":"Author37"},{"Id":38,"Name":"Book38","Author":"Author38"},{"Id":39,"Name":"Book39","Author":"Author39"},{"Id":40,"Name":"Book40","Author":"Author40"},{"Id":41,"Name":"Book41","Author":"Author41"},{"Id":42,"Name":"Book42","Author":"Author42"},{"Id":43,"Name":"Book43","Author":"Author43"},{"Id":44,"Name":"Book44","Author":"Author44"},{"Id":45,"Name":"Book45","Author":"Author45"},{"Id":46,"Name":"Book46","Author":"Author46"},{"Id":47,"Name":"Book47","Author":"Author47"},{"Id":48,"Name":"Book48","Author":"Author48"},{"Id":49,"Name":"Book49","Author":"Author49"},{"Id":50,"Name":"Book50","Author":"Author50"},{"Id":51,"Name":"Book51","Author":"Author51"},{"Id":52,"Name":"Book52","Author":"Author52"},{"Id":53,"Name":"Book53","Author":"Author53"},{"Id":54,"Name":"Book54","Author":"Author54"},{"Id":55,"Name":"Book55","Author":"Author55"},{"Id":56,"Name":"Book56","Author":"Author56"},{"Id":57,"Name":"Book57","Author":"Author57"},{"Id":58,"Name":"Book58","Author":"Author58"},{"Id":59,"Name":"Book59","Author":"Author59"},{"Id":60,"Name":"Book60","Author":"Author60"},{"Id":61,"Name":"Book61","Author":"Author61"},{"Id":62,"Name":"Book62","Author":"Author62"},{"Id":63,"Name":"Book63","Author":"Author63"},{"Id":64,"Name":"Book64","Author":"Author64"},{"Id":65,"Name":"Book65","Author":"Author65"},{"Id":66,"Name":"Book66","Author":"Author66"},{"Id":67,"Name":"Book67","Author":"Author67"},{"Id":68,"Name":"Book68","Author":"Author68"},{"Id":69,"Name":"Book69","Author":"Author69"},{"Id":70,"Name":"Book70","Author":"Author70"},{"Id":71,"Name":"Book71","Author":"Author71"},{"Id":72,"Name":"Book72","Author":"Author72"},{"Id":73,"Name":"Book73","Author":"Author73"},{"Id":74,"Name":"Book74","Author":"Author74"},{"Id":75,"Name":"Book75","Author":"Author75"},{"Id":76,"Name":"Book76","Author":"Author76"},{"Id":77,"Name":"Book77","Author":"Author77"},{"Id":78,"Name":"Book78","Author":"Author78"},{"Id":79,"Name":"Book79","Author":"Author79"},{"Id":80,"Name":"Book80","Author":"Author80"},{"Id":81,"Name":"Book81","Author":"Author81"},{"Id":82,"Name":"Book82","Author":"Author82"},{"Id":83,"Name":"Book83","Author":"Author83"},{"Id":84,"Name":"Book84","Author":"Author84"},{"Id":85,"Name":"Book85","Author":"Author85"},{"Id":86,"Name":"Book86","Author":"Author86"},{"Id":87,"Name":"Book87","Author":"Author87"},{"Id":88,"Name":"Book88","Author":"Author88"},{"Id":89,"Name":"Book89","Author":"Author89"},{"Id":90,"Name":"Book90","Author":"Author90"},{"Id":91,"Name":"Book91","Author":"Author91"},{"Id":92,"Name":"Book92","Author":"Author92"},{"Id":93,"Name":"Book93","Author":"Author93"},{"Id":94,"Name":"Book94","Author":"Author94"},{"Id":95,"Name":"Book95","Author":"Author95"},{"Id":96,"Name":"Book96","Author":"Author96"},{"Id":97,"Name":"Book97","Author":"Author97"},{"Id":98,"Name":"Book98","Author":"Author98"},{"Id":99,"Name":"Book99","Author":"Author99"},{"Id":100,"Name":"Book100","Author":"Author100"}]}' as column: bookvalue3_0_
+2020-12-28 12:02:10,145 [6] DEBUG NHibernate.Loader.Loader [(null)] - done processing result set (1 rows)
+2020-12-28 12:02:10,146 [6] DEBUG NHibernate.AdoNet.AbstractBatcher [(null)] - Closed DbDataReader, open DbDataReaders :0
+2020-12-28 12:02:10,147 [6] DEBUG NHibernate.AdoNet.AbstractBatcher [(null)] - DataReader was closed after 19 ms
+2020-12-28 12:02:10,147 [6] DEBUG NHibernate.AdoNet.AbstractBatcher [(null)] - Closed DbCommand, open DbCommands: 0
+2020-12-28 12:02:10,148 [6] DEBUG NHibernate.AdoNet.ConnectionManager [(null)] - Aggressively releasing database connection
+2020-12-28 12:02:10,148 [6] DEBUG NHibernate.Connection.ConnectionProvider [(null)] - Closing connection
+2020-12-28 12:02:10,149 [6] DEBUG NHibernate.Loader.Loader [(null)] - total objects hydrated: 1
+2020-12-28 12:02:10,151 [6] DEBUG NHibernate.Engine.TwoPhaseLoad [(null)] - resolving associations for [DatabaseBenchmark.Core.Entity.RootBook#3]
+2020-12-28 12:02:10,153 [6] DEBUG NHibernate.Engine.TwoPhaseLoad [(null)] - done materializing entity [DatabaseBenchmark.Core.Entity.RootBook#3]
+2020-12-28 12:02:10,154 [6] DEBUG NHibernate.Engine.StatefulPersistenceContext [(null)] - initializing non-lazy collections
+2020-12-28 12:02:10,155 [6] DEBUG NHibernate.AdoNet.ConnectionManager [(null)] - After autocommit
+2020-12-28 12:02:10,155 [6] DEBUG NHibernate.Impl.SessionImpl [(null)] - transaction completion
+2020-12-28 12:02:10,158 [6] DEBUG NHibernate.Impl.SessionImpl [(null)] - [session-id=e6c66900-2d7d-4de8-ac33-88e4116431fc] running ISession.Dispose()
+2020-12-28 12:02:10,158 [6] DEBUG NHibernate.Impl.SessionImpl [(null)] - [session-id=e6c66900-2d7d-4de8-ac33-88e4116431fc] executing real Dispose(True)
+2020-12-28 12:02:10,158 [6] DEBUG NHibernate.Impl.SessionImpl [(null)] - closing session
+2020-12-28 12:02:10,159 [6] DEBUG NHibernate.AdoNet.AbstractBatcher [(null)] - running BatcherImpl.Dispose(true)
+2020-12-28 12:02:15,748 [6] INFO  DatabaseBenchmark.Web.Controllers.BooksController [(null)] - 00:00:01

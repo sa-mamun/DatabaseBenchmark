@@ -189,3 +189,5 @@ D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\bin\
 D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\bin\System.Text.Json.xml
 D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\bin\System.Threading.Tasks.Extensions.xml
 D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\bin\System.ValueTuple.xml
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\bin\log4net.dll
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\bin\log4net.xml
