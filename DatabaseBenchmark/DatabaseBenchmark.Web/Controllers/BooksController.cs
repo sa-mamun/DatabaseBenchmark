@@ -75,7 +75,7 @@ namespace DatabaseBenchmark.Web.Controllers
 
                     var json = JsonConvert.DeserializeObject<BookJso>(result.BookValue);
 
-                    _logger.Info(duration.ToString());
+                    _logger.Info("Get Value duration: " + duration.ToString());
 
                     return Json(json);
                 }
