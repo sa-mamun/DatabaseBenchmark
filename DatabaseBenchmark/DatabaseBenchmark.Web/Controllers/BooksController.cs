@@ -38,13 +38,9 @@ namespace DatabaseBenchmark.Web.Controllers
             {
                 var bookModel = new BookModel();
                 var time = bookModel.ListOfBookObject(model.TotalNoOfBooks);
-
-                // Calculating TimeSpan
-                TimeSpan duration = DateTime.Parse(time.endTime).Subtract(DateTime.Parse(time.startTime));
-
                 ViewBag.StartTime = time.startTime;
                 ViewBag.EndTime = time.endTime;
-                ViewBag.Duration = duration.ToString();
+                ViewBag.Duration = time.finalCount.ToString();
                 ViewBag.RootBookList = time.rootBooks;
             }
             return View();

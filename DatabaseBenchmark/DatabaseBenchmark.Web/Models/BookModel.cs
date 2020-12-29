@@ -16,33 +16,83 @@ namespace DatabaseBenchmark.Web.Models
 
         private readonly IRootBookService _rootBookService = new RootBookService();
 
-        public (string startTime, string endTime, List<RootBook> rootBooks) ListOfBookObject(int total)
+        public (string startTime, string endTime, TimeSpan finalCount, List<RootBook> rootBooks) ListOfBookObject(int total)
         {
+            int flag = 0, limit = 100000;
+            string finalStartTime = "", finalEndTime = "";
+            TimeSpan timeSpan;
+            TimeSpan finalCount = new TimeSpan(0, 0, 0);
             var randomBookGenerator = new RandomBookGenerator();
-            RootBooks = new List<RootBook>();
 
-            for (int i=0; i<total; i++)
+            while (total >= limit)
             {
-                string key = Guid.NewGuid().ToString();
-                var bookList = randomBookGenerator.GenerateBooks();
-                var json = GenerateKeyValue(bookList, key);
+                total = total - limit;
+                RootBooks = new List<RootBook>();
 
-                var rootBook = new RootBook
+                for (int i = 0; i < limit; i++)
                 {
-                    BookKey = key,
-                    BookValue = json
-                };
+                    string key = Guid.NewGuid().ToString();
+                    var bookList = randomBookGenerator.GenerateBooks();
+                    var json = GenerateKeyValue(bookList, key);
 
-                RootBooks.Add(rootBook);
+                    var rootBook = new RootBook
+                    {
+                        BookKey = key,
+                        BookValue = json
+                    };
+
+                    RootBooks.Add(rootBook);
+                }
+
+                string startTime = DateTime.Now.ToString("h:mm:ss tt");
+
+                if(flag == 0)
+                {
+                    finalStartTime = startTime;
+                    flag = 1;
+                }
+
+                _rootBookService.AddRootBook(RootBooks);
+
+                string endTime = DateTime.Now.ToString("h:mm:ss tt");
+                finalEndTime = endTime;
+
+                timeSpan = DateTime.Parse(endTime).Subtract(DateTime.Parse(startTime));
+                finalCount = finalCount.Add(timeSpan);
             }
 
-            string startTime = DateTime.Now.ToString("h:mm:ss tt");
+            if(total != 0 && total < 100000)
+            {
+                RootBooks = new List<RootBook>();
 
-            _rootBookService.AddRootBook(RootBooks);
+                for (int i = 0; i < total; i++)
+                {
+                    string key = Guid.NewGuid().ToString();
+                    var bookList = randomBookGenerator.GenerateBooks();
+                    var json = GenerateKeyValue(bookList, key);
 
-            string endTime = DateTime.Now.ToString("h:mm:ss tt");
+                    var rootBook = new RootBook
+                    {
+                        BookKey = key,
+                        BookValue = json
+                    };
 
-            return (startTime, endTime, RootBooks);
+                    RootBooks.Add(rootBook);
+                }
+
+                string startTime = DateTime.Now.ToString("h:mm:ss tt");
+
+                _rootBookService.AddRootBook(RootBooks);
+
+                string endTime = DateTime.Now.ToString("h:mm:ss tt");
+                finalEndTime = endTime;
+
+                timeSpan = DateTime.Parse(endTime).Subtract(DateTime.Parse(startTime));
+
+                finalCount = finalCount.Add(timeSpan);
+            }
+
+            return (finalStartTime, finalEndTime ,finalCount, RootBooks);
         }
 
 
@@ -60,9 +110,9 @@ namespace DatabaseBenchmark.Web.Models
             return json;
         }
 
-        public string ConvertObjToJson(BookJso bookHelperLists)
+        public string ConvertObjToJson(BookJso bookJsoLists)
         {
-            string json = JsonConvert.SerializeObject(bookHelperLists);
+            string json = JsonConvert.SerializeObject(bookJsoLists);
             return json;
         }
     }
