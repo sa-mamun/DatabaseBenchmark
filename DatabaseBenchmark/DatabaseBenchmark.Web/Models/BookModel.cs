@@ -82,6 +82,11 @@ namespace DatabaseBenchmark.Web.Models
 
                 string startTime = DateTime.Now.ToString("h:mm:ss tt");
 
+                if (flag == 0)
+                {
+                    finalStartTime = startTime;
+                }
+
                 _rootBookService.AddRootBook(RootBooks);
 
                 string endTime = DateTime.Now.ToString("h:mm:ss tt");

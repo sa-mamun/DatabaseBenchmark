@@ -12,7 +12,7 @@ namespace DatabaseBenchmark.Core.Mappings
     {
         public RootBookMapping()
         {
-            Table("tblRootBook");
+            Table("tblrootbook");
             Id(x => x.Id);
             Map(x => x.BookKey);
             Map(x => x.BookValue);
