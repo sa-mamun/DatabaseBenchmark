@@ -69,11 +69,14 @@ namespace DatabaseBenchmark.Web.Controllers
                     // Calculating TimeSpan
                     TimeSpan duration = DateTime.Parse(endTime).Subtract(DateTime.Parse(startTime));
 
-                    var json = JsonConvert.DeserializeObject<BookJso>(result.BookValue);
+                    if(result != null)
+                    {
+                        var json = JsonConvert.DeserializeObject<BookJso>(result.BookValue);
+                        _logger.Info("Get Value duration: " + duration.ToString());
+                        return Json(json);
+                    }
 
-                    _logger.Info("Get Value duration: " + duration.ToString());
-
-                    return Json(json);
+                    _logger.Info("Invalid Key Found duration: " + duration.ToString());
                 }
                 catch(Exception ex)
                 {

@@ -22,4 +22,3 @@ D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Core\bin
 D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Core\bin\Debug\Remotion.Linq.xml
 D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Core\bin\Debug\Remotion.Linq.EagerFetching.xml
 D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Core\obj\Debug\DatabaseBenchmark.Core.csproj.CopyComplete
-D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Core\obj\Debug\DatabaseBenchmark.Core.csprojAssemblyReference.cache
