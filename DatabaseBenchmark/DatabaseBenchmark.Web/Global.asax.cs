@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Autofac;
+using Autofac.Integration.Mvc;
+using DatabaseBenchmark.Core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -17,6 +20,13 @@ namespace DatabaseBenchmark.Web
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             log4net.Config.XmlConfigurator.Configure();
+
+            // Autofac Configuratoin
+            var builder = new ContainerBuilder();
+            builder.RegisterControllers(typeof(MvcApplication).Assembly);
+            builder.RegisterModule<CoreModule>();
+            var container = builder.Build();
+            DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
         }
     }
 }

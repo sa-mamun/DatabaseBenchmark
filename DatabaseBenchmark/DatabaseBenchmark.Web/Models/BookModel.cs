@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 
 namespace DatabaseBenchmark.Web.Models
 {
@@ -14,7 +15,12 @@ namespace DatabaseBenchmark.Web.Models
         public List<BookJso> GenerateKeyValueBooks { get; set; }
         public List<RootBook> RootBooks { get; set; }
 
-        private readonly IRootBookService _rootBookService = new RootBookService();
+        private readonly IRootBookService _rootBookService;
+
+        public BookModel()
+        {
+            _rootBookService = DependencyResolver.Current.GetService<IRootBookService>();
+        }
 
         public (string startTime, string endTime, TimeSpan finalCount, List<RootBook> rootBooks) ListOfBookObject(int total)
         {

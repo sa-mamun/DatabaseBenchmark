@@ -1,180 +1,37 @@
-09:07:29,642 [5] INFO - NHibernate 5.3.3+7530a259e1b52ee8a9722e7bbd728ac913ef68f7 (assembly 5.3.0.0)
-09:07:29,648 [5] INFO - hibernate-configuration section not found in application configuration file
-09:07:29,648 [5] INFO - Bytecode provider name : lcg
-09:07:29,649 [5] INFO - Objects factory class : NHibernate.Bytecode.ActivatorObjectsFactory
-09:07:29,649 [5] INFO - Using reflection optimizer
-09:07:29,999 [5] INFO - Mapping class: DatabaseBenchmark.Core.Entity.RootBook -> tblRootBook
-09:07:30,033 [5] INFO - Using dialect: NHibernate.Dialect.MySQLDialect
-09:07:30,041 [5] INFO - checking mappings queue
-09:07:30,041 [5] INFO - processing one-to-many association mappings
-09:07:30,041 [5] INFO - processing one-to-one association property references
-09:07:30,042 [5] INFO - processing foreign key constraints
-09:07:30,043 [5] INFO - processing filters (second pass)
-09:07:30,050 [5] INFO - Using dialect: NHibernate.Dialect.MySQLDialect
-09:07:30,053 [5] INFO - Using dialect: NHibernate.Dialect.MySQLDialect
-09:07:30,087 [5] INFO - Using dialect defined converter
-09:07:30,087 [5] INFO - Generate SQL with comments: disabled
-09:07:30,088 [5] INFO - Initializing connection provider: NHibernate.Connection.DriverConnectionProvider
-09:07:30,088 [5] INFO - Configuring ConnectionProvider
-09:07:30,139 [5] INFO - Transaction factory: NHibernate.Transaction.AdoNetWithSystemTransactionFactory
-09:07:30,139 [5] INFO - Optimize cache for minimal puts: False
-09:07:30,140 [5] INFO - Connection release mode: auto
-09:07:30,140 [5] INFO - Default batch fetch size: 1
-09:07:30,140 [5] INFO - Statistics: disabled
-09:07:30,140 [5] INFO - Deleted entity synthetic identifier rollback: disabled
-09:07:30,140 [5] INFO - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
-09:07:30,140 [5] INFO - Query provider: NHibernate.Linq.DefaultQueryProvider
-09:07:30,141 [5] INFO - Query language substitutions: {}
-09:07:30,141 [5] INFO - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=5.3.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
-09:07:30,141 [5] INFO - Order SQL inserts for batching: disabled
-09:07:30,141 [5] INFO - Order SQL updates for batching: disabled
-09:07:30,142 [5] INFO - Batcher factory: NHibernate.AdoNet.NonBatchingBatcherFactory, NHibernate, Version=5.3.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
-09:07:30,142 [5] INFO - Default flush mode: Auto
-09:07:30,142 [5] INFO - Named query checking : enabled
-09:07:30,149 [5] INFO - building session factory
-09:07:30,342 [5] INFO - no name configured
-09:28:25,374 [6] INFO - NHibernate 5.3.3+7530a259e1b52ee8a9722e7bbd728ac913ef68f7 (assembly 5.3.0.0)
-09:28:25,380 [6] INFO - hibernate-configuration section not found in application configuration file
-09:28:25,381 [6] INFO - Bytecode provider name : lcg
-09:28:25,381 [6] INFO - Objects factory class : NHibernate.Bytecode.ActivatorObjectsFactory
-09:28:25,382 [6] INFO - Using reflection optimizer
-09:28:36,436 [6] INFO - Mapping class: DatabaseBenchmark.Core.Entity.RootBook -> tblRootBook
-09:28:36,474 [6] INFO - Using dialect: NHibernate.Dialect.MySQLDialect
-09:28:36,482 [6] INFO - checking mappings queue
-09:28:36,482 [6] INFO - processing one-to-many association mappings
-09:28:36,482 [6] INFO - processing one-to-one association property references
-09:28:36,482 [6] INFO - processing foreign key constraints
-09:28:36,483 [6] INFO - processing filters (second pass)
-09:28:36,490 [6] INFO - Using dialect: NHibernate.Dialect.MySQLDialect
-09:28:36,502 [6] INFO - Using dialect: NHibernate.Dialect.MySQLDialect
-09:28:36,535 [6] INFO - Using dialect defined converter
-09:28:36,535 [6] INFO - Generate SQL with comments: disabled
-09:28:36,536 [6] INFO - Initializing connection provider: NHibernate.Connection.DriverConnectionProvider
-09:28:36,536 [6] INFO - Configuring ConnectionProvider
-09:28:36,598 [6] INFO - Transaction factory: NHibernate.Transaction.AdoNetWithSystemTransactionFactory
-09:28:36,598 [6] INFO - Optimize cache for minimal puts: False
-09:28:36,599 [6] INFO - Connection release mode: auto
-09:28:36,599 [6] INFO - Default batch fetch size: 1
-09:28:36,599 [6] INFO - Statistics: disabled
-09:28:36,599 [6] INFO - Deleted entity synthetic identifier rollback: disabled
-09:28:36,599 [6] INFO - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
-09:28:36,599 [6] INFO - Query provider: NHibernate.Linq.DefaultQueryProvider
-09:28:36,600 [6] INFO - Query language substitutions: {}
-09:28:36,601 [6] INFO - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=5.3.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
-09:28:36,601 [6] INFO - Order SQL inserts for batching: disabled
-09:28:36,601 [6] INFO - Order SQL updates for batching: disabled
-09:28:36,601 [6] INFO - Batcher factory: NHibernate.AdoNet.NonBatchingBatcherFactory, NHibernate, Version=5.3.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
-09:28:36,601 [6] INFO - Default flush mode: Auto
-09:28:36,601 [6] INFO - Named query checking : enabled
-09:28:36,610 [6] INFO - building session factory
-09:28:36,824 [6] INFO - no name configured
-09:29:39,355 [6] INFO - handling property dereference [DatabaseBenchmark.Core.Entity.RootBook (x) -> BookKey (Class)]
-09:31:01,186 [6] INFO - NHibernate 5.3.3+7530a259e1b52ee8a9722e7bbd728ac913ef68f7 (assembly 5.3.0.0)
-09:31:01,192 [6] INFO - hibernate-configuration section not found in application configuration file
-09:31:01,193 [6] INFO - Bytecode provider name : lcg
-09:31:01,193 [6] INFO - Objects factory class : NHibernate.Bytecode.ActivatorObjectsFactory
-09:31:01,194 [6] INFO - Using reflection optimizer
-09:31:01,517 [6] INFO - Mapping class: DatabaseBenchmark.Core.Entity.RootBook -> tblrootbook
-09:31:01,550 [6] INFO - Using dialect: NHibernate.Dialect.MySQLDialect
-09:31:01,558 [6] INFO - checking mappings queue
-09:31:01,558 [6] INFO - processing one-to-many association mappings
-09:31:01,558 [6] INFO - processing one-to-one association property references
-09:31:01,558 [6] INFO - processing foreign key constraints
-09:31:01,559 [6] INFO - processing filters (second pass)
-09:31:01,566 [6] INFO - Using dialect: NHibernate.Dialect.MySQLDialect
-09:31:01,568 [6] INFO - Using dialect: NHibernate.Dialect.MySQLDialect
-09:31:01,602 [6] INFO - Using dialect defined converter
-09:31:01,603 [6] INFO - Generate SQL with comments: disabled
-09:31:01,603 [6] INFO - Initializing connection provider: NHibernate.Connection.DriverConnectionProvider
-09:31:01,604 [6] INFO - Configuring ConnectionProvider
-09:31:01,648 [6] INFO - Transaction factory: NHibernate.Transaction.AdoNetWithSystemTransactionFactory
-09:31:01,648 [6] INFO - Optimize cache for minimal puts: False
-09:31:01,648 [6] INFO - Connection release mode: auto
-09:31:01,648 [6] INFO - Default batch fetch size: 1
-09:31:01,648 [6] INFO - Statistics: disabled
-09:31:01,648 [6] INFO - Deleted entity synthetic identifier rollback: disabled
-09:31:01,648 [6] INFO - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
-09:31:01,649 [6] INFO - Query provider: NHibernate.Linq.DefaultQueryProvider
-09:31:01,649 [6] INFO - Query language substitutions: {}
-09:31:01,650 [6] INFO - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=5.3.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
-09:31:01,650 [6] INFO - Order SQL inserts for batching: disabled
-09:31:01,650 [6] INFO - Order SQL updates for batching: disabled
-09:31:01,650 [6] INFO - Batcher factory: NHibernate.AdoNet.NonBatchingBatcherFactory, NHibernate, Version=5.3.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
-09:31:01,651 [6] INFO - Default flush mode: Auto
-09:31:01,651 [6] INFO - Named query checking : enabled
-09:31:01,658 [6] INFO - building session factory
-09:31:01,839 [6] INFO - no name configured
-09:31:02,111 [6] INFO - handling property dereference [DatabaseBenchmark.Core.Entity.RootBook (x) -> BookKey (Class)]
-09:31:02,241 [6] INFO - Get Value duration: 00:00:03
-09:59:42,487 [6] INFO - NHibernate 5.3.3+7530a259e1b52ee8a9722e7bbd728ac913ef68f7 (assembly 5.3.0.0)
-09:59:42,493 [6] INFO - hibernate-configuration section not found in application configuration file
-09:59:42,494 [6] INFO - Bytecode provider name : lcg
-09:59:42,495 [6] INFO - Objects factory class : NHibernate.Bytecode.ActivatorObjectsFactory
-09:59:42,495 [6] INFO - Using reflection optimizer
-09:59:42,828 [6] INFO - Mapping class: DatabaseBenchmark.Core.Entity.RootBook -> tblrootbook
-09:59:42,861 [6] INFO - Using dialect: NHibernate.Dialect.MySQLDialect
-09:59:42,869 [6] INFO - checking mappings queue
-09:59:42,869 [6] INFO - processing one-to-many association mappings
-09:59:42,869 [6] INFO - processing one-to-one association property references
-09:59:42,869 [6] INFO - processing foreign key constraints
-09:59:42,870 [6] INFO - processing filters (second pass)
-09:59:42,877 [6] INFO - Using dialect: NHibernate.Dialect.MySQLDialect
-09:59:42,880 [6] INFO - Using dialect: NHibernate.Dialect.MySQLDialect
-09:59:42,915 [6] INFO - Using dialect defined converter
-09:59:42,915 [6] INFO - Generate SQL with comments: disabled
-09:59:42,916 [6] INFO - Initializing connection provider: NHibernate.Connection.DriverConnectionProvider
-09:59:42,916 [6] INFO - Configuring ConnectionProvider
-09:59:42,958 [6] INFO - Transaction factory: NHibernate.Transaction.AdoNetWithSystemTransactionFactory
-09:59:42,959 [6] INFO - Optimize cache for minimal puts: False
-09:59:42,959 [6] INFO - Connection release mode: auto
-09:59:42,959 [6] INFO - Default batch fetch size: 1
-09:59:42,959 [6] INFO - Statistics: disabled
-09:59:42,959 [6] INFO - Deleted entity synthetic identifier rollback: disabled
-09:59:42,959 [6] INFO - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
-09:59:42,959 [6] INFO - Query provider: NHibernate.Linq.DefaultQueryProvider
-09:59:42,960 [6] INFO - Query language substitutions: {}
-09:59:42,961 [6] INFO - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=5.3.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
-09:59:42,961 [6] INFO - Order SQL inserts for batching: disabled
-09:59:42,961 [6] INFO - Order SQL updates for batching: disabled
-09:59:42,961 [6] INFO - Batcher factory: NHibernate.AdoNet.NonBatchingBatcherFactory, NHibernate, Version=5.3.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
-09:59:42,961 [6] INFO - Default flush mode: Auto
-09:59:42,961 [6] INFO - Named query checking : enabled
-09:59:42,969 [6] INFO - building session factory
-09:59:43,154 [6] INFO - no name configured
-11:20:12,571 [5] INFO - NHibernate 5.3.3+7530a259e1b52ee8a9722e7bbd728ac913ef68f7 (assembly 5.3.0.0)
-11:20:12,577 [5] INFO - hibernate-configuration section not found in application configuration file
-11:20:12,578 [5] INFO - Bytecode provider name : lcg
-11:20:12,579 [5] INFO - Objects factory class : NHibernate.Bytecode.ActivatorObjectsFactory
-11:20:12,579 [5] INFO - Using reflection optimizer
-11:20:12,920 [5] INFO - Mapping class: DatabaseBenchmark.Core.Entity.RootBook -> tblrootbook
-11:20:12,954 [5] INFO - Using dialect: NHibernate.Dialect.MySQLDialect
-11:20:12,962 [5] INFO - checking mappings queue
-11:20:12,962 [5] INFO - processing one-to-many association mappings
-11:20:12,962 [5] INFO - processing one-to-one association property references
-11:20:12,962 [5] INFO - processing foreign key constraints
-11:20:12,963 [5] INFO - processing filters (second pass)
-11:20:12,970 [5] INFO - Using dialect: NHibernate.Dialect.MySQLDialect
-11:20:12,973 [5] INFO - Using dialect: NHibernate.Dialect.MySQLDialect
-11:20:13,007 [5] INFO - Using dialect defined converter
-11:20:13,007 [5] INFO - Generate SQL with comments: disabled
-11:20:13,008 [5] INFO - Initializing connection provider: NHibernate.Connection.DriverConnectionProvider
-11:20:13,008 [5] INFO - Configuring ConnectionProvider
-11:20:13,051 [5] INFO - Transaction factory: NHibernate.Transaction.AdoNetWithSystemTransactionFactory
-11:20:13,052 [5] INFO - Optimize cache for minimal puts: False
-11:20:13,052 [5] INFO - Connection release mode: auto
-11:20:13,052 [5] INFO - Default batch fetch size: 1
-11:20:13,052 [5] INFO - Statistics: disabled
-11:20:13,052 [5] INFO - Deleted entity synthetic identifier rollback: disabled
-11:20:13,052 [5] INFO - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
-11:20:13,053 [5] INFO - Query provider: NHibernate.Linq.DefaultQueryProvider
-11:20:13,053 [5] INFO - Query language substitutions: {}
-11:20:13,054 [5] INFO - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=5.3.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
-11:20:13,054 [5] INFO - Order SQL inserts for batching: disabled
-11:20:13,054 [5] INFO - Order SQL updates for batching: disabled
-11:20:13,054 [5] INFO - Batcher factory: NHibernate.AdoNet.NonBatchingBatcherFactory, NHibernate, Version=5.3.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
-11:20:13,055 [5] INFO - Default flush mode: Auto
-11:20:13,055 [5] INFO - Named query checking : enabled
-11:20:13,062 [5] INFO - building session factory
-11:20:13,242 [5] INFO - no name configured
-11:20:43,107 [5] INFO - handling property dereference [DatabaseBenchmark.Core.Entity.RootBook (x) -> BookKey (Class)]
-11:20:43,200 [5] INFO - Get Value duration: 00:00:01
+10:58:53,160 [9] INFO - NHibernate 5.3.3+7530a259e1b52ee8a9722e7bbd728ac913ef68f7 (assembly 5.3.0.0)
+10:58:53,167 [9] INFO - hibernate-configuration section not found in application configuration file
+10:58:53,167 [9] INFO - Bytecode provider name : lcg
+10:58:53,168 [9] INFO - Objects factory class : NHibernate.Bytecode.ActivatorObjectsFactory
+10:58:53,168 [9] INFO - Using reflection optimizer
+10:58:53,521 [9] INFO - Mapping class: DatabaseBenchmark.Core.Entity.RootBook -> tblrootbook
+10:58:53,555 [9] INFO - Using dialect: NHibernate.Dialect.MySQLDialect
+10:58:53,563 [9] INFO - checking mappings queue
+10:58:53,563 [9] INFO - processing one-to-many association mappings
+10:58:53,563 [9] INFO - processing one-to-one association property references
+10:58:53,564 [9] INFO - processing foreign key constraints
+10:58:53,565 [9] INFO - processing filters (second pass)
+10:58:53,573 [9] INFO - Using dialect: NHibernate.Dialect.MySQLDialect
+10:58:53,576 [9] INFO - Using dialect: NHibernate.Dialect.MySQLDialect
+10:58:53,614 [9] INFO - Using dialect defined converter
+10:58:53,614 [9] INFO - Generate SQL with comments: disabled
+10:58:53,614 [9] INFO - Initializing connection provider: NHibernate.Connection.DriverConnectionProvider
+10:58:53,615 [9] INFO - Configuring ConnectionProvider
+10:58:53,672 [9] INFO - Transaction factory: NHibernate.Transaction.AdoNetWithSystemTransactionFactory
+10:58:53,673 [9] INFO - Optimize cache for minimal puts: False
+10:58:53,673 [9] INFO - Connection release mode: auto
+10:58:53,673 [9] INFO - Default batch fetch size: 1
+10:58:53,673 [9] INFO - Statistics: disabled
+10:58:53,673 [9] INFO - Deleted entity synthetic identifier rollback: disabled
+10:58:53,673 [9] INFO - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
+10:58:53,674 [9] INFO - Query provider: NHibernate.Linq.DefaultQueryProvider
+10:58:53,674 [9] INFO - Query language substitutions: {}
+10:58:53,675 [9] INFO - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=5.3.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+10:58:53,675 [9] INFO - Order SQL inserts for batching: disabled
+10:58:53,675 [9] INFO - Order SQL updates for batching: disabled
+10:58:53,675 [9] INFO - Batcher factory: NHibernate.AdoNet.NonBatchingBatcherFactory, NHibernate, Version=5.3.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+10:58:53,676 [9] INFO - Default flush mode: Auto
+10:58:53,676 [9] INFO - Named query checking : enabled
+10:58:53,683 [9] INFO - building session factory
+10:58:53,899 [9] INFO - no name configured
+10:59:07,824 [9] INFO - handling property dereference [DatabaseBenchmark.Core.Entity.RootBook (x) -> BookKey (Class)]
+10:59:07,922 [9] INFO - Get Value duration: 00:00:00

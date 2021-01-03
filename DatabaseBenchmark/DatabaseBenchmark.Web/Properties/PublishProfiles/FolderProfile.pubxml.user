@@ -13,17 +13,32 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="bin/Antlr3.Runtime.pdb">
       <publishTime>09/10/2013 16:29:20</publishTime>
     </File>
+    <File Include="bin/Autofac.dll">
+      <publishTime>09/28/2020 18:37:00</publishTime>
+    </File>
+    <File Include="bin/Autofac.Integration.Mvc.dll">
+      <publishTime>09/28/2020 21:55:52</publishTime>
+    </File>
+    <File Include="bin/Autofac.Integration.Mvc.pdb">
+      <publishTime>09/28/2020 21:55:52</publishTime>
+    </File>
+    <File Include="bin/Autofac.pdb">
+      <publishTime>09/28/2020 18:37:00</publishTime>
+    </File>
     <File Include="bin/DatabaseBenchmark.Core.dll">
-      <publishTime>12/31/2020 11:04:18</publishTime>
+      <publishTime>01/03/2021 11:00:01</publishTime>
+    </File>
+    <File Include="bin/DatabaseBenchmark.Core.dll.config">
+      <publishTime>01/03/2021 10:51:59</publishTime>
     </File>
     <File Include="bin/DatabaseBenchmark.Core.pdb">
-      <publishTime>12/31/2020 11:04:18</publishTime>
+      <publishTime>01/03/2021 11:00:01</publishTime>
     </File>
     <File Include="bin/DatabaseBenchmark.Web.dll">
-      <publishTime>12/31/2020 11:21:02</publishTime>
+      <publishTime>01/03/2021 11:00:01</publishTime>
     </File>
     <File Include="bin/DatabaseBenchmark.Web.pdb">
-      <publishTime>12/31/2020 11:21:02</publishTime>
+      <publishTime>01/03/2021 11:00:01</publishTime>
     </File>
     <File Include="bin/FluentNHibernate.dll">
       <publishTime>11/12/2020 01:57:18</publishTime>
@@ -208,6 +223,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="bin/System.Buffers.dll">
       <publishTime>02/19/2020 10:05:18</publishTime>
     </File>
+    <File Include="bin/System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>04/14/2020 22:49:20</publishTime>
+    </File>
     <File Include="bin/System.Memory.dll">
       <publishTime>02/19/2020 10:05:18</publishTime>
     </File>
@@ -302,7 +320,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>12/26/2020 11:11:51</publishTime>
     </File>
     <File Include="Logs/log.txt">
-      <publishTime>12/31/2020 09:59:43</publishTime>
+      <publishTime>01/03/2021 10:59:07</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>12/26/2020 11:11:53</publishTime>

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 
 namespace DatabaseBenchmark.Web.Models
 {
@@ -13,7 +14,12 @@ namespace DatabaseBenchmark.Web.Models
         [DisplayName("Enter Book Key: ")]
         public string BookKey { get; set; }
 
-        private readonly IRootBookService _rootBookService = new RootBookService();
+        private readonly IRootBookService _rootBookService;
+
+        public GetValueVM()
+        {
+            _rootBookService = DependencyResolver.Current.GetService<IRootBookService>();
+        }
 
         public RootBook GetBookValue(string key)
         {

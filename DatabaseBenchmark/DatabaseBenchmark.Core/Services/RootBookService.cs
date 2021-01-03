@@ -10,7 +10,12 @@ namespace DatabaseBenchmark.Core.Services
 {
     public class RootBookService : IRootBookService
     {
-        private readonly IRepository<RootBook> _repository = new Repository<RootBook>();
+        private readonly IRepository<RootBook> _repository;
+
+        public RootBookService(IRepository<RootBook> repository)
+        {
+            _repository = repository;
+        }
 
         public void AddRootBook(List<RootBook> rootBooks)
         {

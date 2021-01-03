@@ -191,3 +191,12 @@ D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\bin\
 D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\bin\System.ValueTuple.xml
 D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\bin\log4net.dll
 D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\bin\log4net.xml
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\bin\Autofac.dll
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\bin\Autofac.Integration.Mvc.dll
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\bin\DatabaseBenchmark.Core.dll.config
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\bin\Autofac.pdb
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\bin\Autofac.xml
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\bin\Autofac.Integration.Mvc.pdb
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\bin\Autofac.Integration.Mvc.xml
+D:\Github_Project\DatabaseBenchmark\DatabaseBenchmark\DatabaseBenchmark.Web\bin\System.Diagnostics.DiagnosticSource.xml
