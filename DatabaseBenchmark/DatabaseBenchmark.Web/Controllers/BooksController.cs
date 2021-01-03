@@ -32,16 +32,17 @@ namespace DatabaseBenchmark.Web.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult GenerateBook(GenerateBookVM model)
         {
             if(ModelState.IsValid)
             {
                 var bookModel = new BookModel();
-                var time = bookModel.ListOfBookObject(model.TotalNoOfBooks);
-                ViewBag.StartTime = time.startTime;
-                ViewBag.EndTime = time.endTime;
-                ViewBag.Duration = time.finalCount.ToString();
-                ViewBag.RootBookList = time.rootBooks;
+                var result = bookModel.ListOfBookObject(model.TotalNoOfBooks);
+                ViewBag.StartTime = result.startTime;
+                ViewBag.EndTime = result.endTime;
+                ViewBag.Duration = result.finalCount.ToString();
+                ViewBag.RootBookList = result.rootBooks;
             }
             return View();
         }
@@ -53,6 +54,7 @@ namespace DatabaseBenchmark.Web.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult GetBook(GetValueVM model)
         {
             if (ModelState.IsValid)
