@@ -117,6 +117,7 @@
     <Compile Include="CoreModule.cs" />
     <Compile Include="DbConnection\NHibernateMySQLContext.cs" />
     <Compile Include="Entity\RootBook.cs" />
+    <Compile Include="Exceptions\CustomInvalidException.cs" />
     <Compile Include="Mappings\RootBookMapping.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RandomBookGenerator.cs" />

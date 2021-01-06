@@ -1,4 +1,5 @@
 ﻿using DatabaseBenchmark.Core;
+using DatabaseBenchmark.Core.Exceptions;
 using DatabaseBenchmark.Web.Models;
 using log4net;
 using Newtonsoft.Json;
@@ -32,7 +33,6 @@ namespace DatabaseBenchmark.Web.Controllers
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public ActionResult GenerateBook(GenerateBookVM model)
         {
             if(ModelState.IsValid)
@@ -54,7 +54,6 @@ namespace DatabaseBenchmark.Web.Controllers
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public ActionResult GetBook(GetValueVM model)
         {
             if (ModelState.IsValid)
@@ -80,7 +79,11 @@ namespace DatabaseBenchmark.Web.Controllers
 
                     _logger.Info("Invalid Key Found duration: " + duration.ToString());
                 }
-                catch(Exception ex)
+                catch (CustomInvalidException ex)
+                {
+                    ModelState.AddModelError("", ex.Message);
+                }
+                catch (Exception ex)
                 {
                     ModelState.AddModelError("", "Failed!!Please try again");
                 }

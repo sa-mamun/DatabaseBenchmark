@@ -1,4 +1,5 @@
 ﻿using DatabaseBenchmark.Core.Entity;
+using DatabaseBenchmark.Core.Exceptions;
 using DatabaseBenchmark.Core.Repositories;
 using System;
 using System.Collections.Generic;
@@ -24,7 +25,12 @@ namespace DatabaseBenchmark.Core.Services
 
         public RootBook GetBookByKey(string bookKey)
         {
-            return _repository.GetObject(x => x.BookKey == bookKey);
+            var result = _repository.GetObject(x => x.BookKey == bookKey);
+            if (result == null)
+            {
+                throw new CustomInvalidException("Invalid Book Key");
+            }
+            return result;
         }
     }
 }
